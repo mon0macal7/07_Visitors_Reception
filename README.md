@@ -1,2 +1,2 @@
-# 06_Visitors_Reception
+# 07_Visitors_Reception
 Visitors Reception central built with JavaScript, HTML, CSS and Firebase.
