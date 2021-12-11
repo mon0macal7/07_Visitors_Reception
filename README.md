@@ -5,7 +5,7 @@ Visitors Reception central built with JavaScript, HTML, CSS and Firebase.
 
 The visitors entry registration has became an important task to do and that we can`t avoid since the track of people that have been together and get exposed to a positive COVID-19 person need to be informed and take care of theirselves inmediateley. In many countries, this is a mandatory feature to all the open spaces, events, buildings, offices, stores, everywhere the managers of the spaces have to take full responsability to provide the health care services a list of people that have match in one place. But, even before the pandemic the Digital Transformation have been changing already the way in which the register of entries into a building or an event have been managed, but this procedure still being a tedious task for many people that now are pushed to do manually and is as well very irrealistic that in this era, people have to be sitting all day into a entrance just to take the list of the people visiting and tracking every movement of the entrances, and making write the people's name, last name, reason to visit, timing, signature, etc, into a huge notebook, all with the same pen. Specially for the amount of exposure they have and the huge responsability that this implies, in the future this systems will be replaced for ones that makes the things easy for us and at the same time that provides a huge significant advantage; the analisys of the registration data because will be persistent and the prediction of the people confluence to avoid the crowds that in some scenarios can mean a big health problem.
 
-In this current scenario we have to build a proper solution that allow a coworking building to register every visit, with the personal contact info, and a picture of their face, the reason and the people or office that visits and an administrators separate view to go see the current people registered and check basic analytics of it, like how many during the last days and other specific numbers that may be useful to tke decisions. 
+In this current scenario we have to build a proper solution that allow a coworking building to register every visit, with the personal contact info, and a picture of their face, the reason and the people or office that visits and an administrators separate view to go see the current people registered and check basic analytics of it, like how many during the last days and other specific numbers that may be useful to take decisions. 
 
 ---
 Índice
@@ -109,11 +109,11 @@ The _boilerplate_ should contains a file structure as a starting point like this
 
 You have to identify the data you need to create your own JSON storing the co-working statis data as number as offices, people in charge of it and building name to create dinamically the selectable entries for the visitors. 
 
-- [Use a JSON format validator] (https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
+- [Use a JSON format validator] (https://jsonformatter.curiousconcept.com/)
 - [Read the Firebase documentation to learn how to use Firestore Cloud DB and create your developer account gmail email required](https://firebase.google.com/docs/firestore)
 - [Learn more about Firebase (Google) database: Firestore](https://www.youtube.com/watch?v=itNsRn1kjLU)
 - First get your Firebase SDK authentication code to add to your application, then add the Firestor services to your app as well.
-- [Learn about the data sctucturin in Firestore, "Collections" and the data types allowed](https://firebase.google.com/docs/firestore/manage-data/data-types)
+- [Learn about the data sctucturing in Firestore, "Collections" and the data types allowed](https://firebase.google.com/docs/firestore/manage-data/data-types)
 - [Plan and think very well the data structure that your objects "Collections" in Firebase will store, rember the data types and choose accordingly what you need to store.](https://firebase.google.com/docs/firestore/data-model)
 - [Learn about the Date object in JavaScript](https://www.w3schools.com/js/js_dates.asp)
 - Learn about the img storing in firebase
@@ -163,6 +163,7 @@ You are not limited to implementing only the mandatory part, you can go forward 
 - [ ] My first CRUD in Firebase
 - [ ] My first Data Structuring project
 - [ ] Access to Operative System feature: camera
+- [ ] Array methods and iterators
 - [ ] object iterators and key finders
 - [ ] import & export modules
 - [ ] GitHub Branch Modeling > Development > Release 
