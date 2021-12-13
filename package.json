@@ -1,0 +1,30 @@
+{
+  "name": "07_visitors_reception",
+  "version": "1.0.0",
+  "description": "Web Application for a tablet to digital registration of visitors at the entrance of a coworking building.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mon0macal7/07_Visitors_Reception.git"
+  },
+  "keywords": [
+    "visitors",
+    "reception",
+    "registro"
+  ],
+  "author": "Amanda Ramírez, Monica Macal, Fernanda Fajardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mon0macal7/07_Visitors_Reception/issues"
+  },
+  "homepage": "https://github.com/mon0macal7/07_Visitors_Reception#readme",
+  "devDependencies": {
+    "eslint": "^8.4.1"
+  }
+}
