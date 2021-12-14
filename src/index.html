@@ -17,6 +17,33 @@
         <button>Registrarse</button>
     </section>
 
+
+    <!--------------- Se agrega el código que será nuesta conección para utilizar firebase ----------------->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCRxIfJAzkJlcag__mUaFaEXAuoi2jPbuU",
+        authDomain: "visitors-reception.firebaseapp.com",
+        projectId: "visitors-reception",
+        storageBucket: "visitors-reception.appspot.com",
+        messagingSenderId: "190301293908",
+        appId: "1:190301293908:web:284945bb727bd8c37a4cc1",
+        measurementId: "G-1ENJG19SWH"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+
     <script src="admin.js" type="module"></script>
 </body>
 
