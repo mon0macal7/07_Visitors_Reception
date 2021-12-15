@@ -9,7 +9,14 @@
   text-align: center;
   align-items: center;
 }
+.logo {
+  font-size: 10px;
+}
 #button-register {
   border-radius: 10vh;
   width: 50vh;
+}
+
+#names {
+  justify-content: space-around;
 }
