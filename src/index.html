@@ -7,6 +7,8 @@
     <title>Visitors reception</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="admin.html">
     <link href="visitors.html">
     <link rel="stylesheet" href="style.css" />
@@ -14,9 +16,50 @@
 
 <body>
     <section id="pantalla-1-inicio">
-        <button>Registrarse</button>
-    </section>
+        <a href="visitors.html"><button type="button" class="btn btn-secondary  " id="button-register">Registrarse</button></a>
 
+
+    </section>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="admin.html" >Because your ideas are endless</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
     <!--------------- Se agrega el código que será nuesta conección para utilizar firebase ----------------->
     <script type="module">
@@ -29,13 +72,13 @@
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
-        apiKey: "AIzaSyCRxIfJAzkJlcag__mUaFaEXAuoi2jPbuU",
-        authDomain: "visitors-reception.firebaseapp.com",
-        projectId: "visitors-reception",
-        storageBucket: "visitors-reception.appspot.com",
-        messagingSenderId: "190301293908",
-        appId: "1:190301293908:web:284945bb727bd8c37a4cc1",
-        measurementId: "G-1ENJG19SWH"
+        apiKey: "AIzaSyCKlJxglkf3NDrZmF4n8qTqSDE2RVCPxF8",
+        authDomain: "visitors-reception-da4ea.firebaseapp.com",
+        projectId: "visitors-reception-da4ea",
+        storageBucket: "visitors-reception-da4ea.appspot.com",
+        messagingSenderId: "1088372954140",
+        appId: "1:1088372954140:web:be5f6aa69357d5c2d17bd9",
+        measurementId: "G-11729322H3"
       };
     
       // Initialize Firebase
@@ -44,7 +87,9 @@
     </script>
 
 
+
     <script src="admin.js" type="module"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,16 @@
+/* Pantalla 1-Inicio */
+#pantalla-1-inicio {
+  background-color: blueviolet;
+  width: auto;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+#button-register {
+  background: #33c3ff;
+  border-radius: 10vh;
+  width: 35%;
+}
