@@ -1,20 +1,60 @@
 /* Pantalla 1-Inicio */
 #pantalla-1-inicio {
-  background: url(https://i.pinimg.com/564x/8f/e4/ba/8fe4ba50882b42d487122ace48e2c608.jpg);
+  background: url(https://i.pinimg.com/564x/14/3c/c4/143cc440e4b1c4cd7deff3663a8b00f9.jpg);
   width: auto;
   height: 82vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  align-items: center;
 }
 .logo {
-  font-size: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  width: 10%;
+  border-radius: 3vh;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.849);
 }
-#button-register {
-  border-radius: 10vh;
-  width: 50vh;
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: auto;
+}
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 0.6em;
+  border-radius: 0.6em;
+  color: red;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.btn:hover,
+btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.third {
+  border-color: blue;
+  color: #fff;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
 }
 
 #names {
