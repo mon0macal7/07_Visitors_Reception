@@ -307,3 +307,8 @@ let LoopBuilding = {
     },
   ],
 };
+
+
+// Funciones para formato de visitantes
+
+
