@@ -10,98 +10,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="admin.html">
   <link href="index.html">
-  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <section id="pantalla1-registro">
+    <div class="container1">
+      <div class="empresa-container">
+        <div class="register">
+          <h2>Ingresa tus datos</h2>
+          <form id="formulario">
+            <input type="text" name="Name" placeholder="Nombre" class="name" required>
+            <input type="text" name="Apellido" placeholder="Apellido" class="lastName" required>
+            <input type="email" name="Mail" placeholder="@Email" class="email" required>
+            <input type="button" name="Siguiente" value="Registrarse" class="next">
+          </form>
+        </div>
+        <div class="empresa">
+          <h2>Datos de la Empresa</h2>
+          <form class="empresa-items">
+            <label for="dropdown" id="empresas">Por favor indica la empresa que visitas</label>
+            <select id="dropdown">
+              <option value="Sourceful">Sourceful</option>
+              <option value="Waterdrop">Waterdrop</option>
+              <option value="Lemontec">Lemontec</option>
+              <option value="Minu">Minu</option>
+              <option value="Homie">Homie</option>
+              <option value="Shuttle Cloud">Shuttle Cloud</option>
+              <option value="Ludei">Ludei</option>
+              <option value="Alien Vault">Alien Vault</option>
+              <option value="Fora">Fora</option>
+              <option value="Freshwater">Freshwater</option>
+              <option value="Sophia">Sophia</option>
+              <option value="Wepow">Wepow</option>
+              <option value="Urbvan">Urbvan</option>
+              <option value="Klar">Klar</option>
+              <option value="Moons">Moons</option>
+            </select>
 
-    <form id="formulario">
-    <!----------- Barra de progreso  ---------------->
-      <ul id="progressbar">
-        <li class="active">Datos Personales</li>
-        <li>Empresa que visita</li>
-        <li>Toma de fotorafía</li>
-      </ul>
+            <label for="dropdown" id="motivo">Motivo de la visita</label>
+            <select id="dropdown1">
+              <option value="Entrevista">Entrevista</option>
+              <option value="Estudiante">Estudiante</option>
+              <option value="Paueteria">Paqueteria</option>
+              <option value="Personal">Personal</option>
+              <option value="Reunion">Reunion</option>
+              <option value="Otro">Otro</option>
+            </select>
+
+            <label id="cita">Tiene cita?</label>
+            <input type="checkbox">
+            <label for="Si">Si</label>
+            <input type="checkbox">
+            <label for="No">No</label>
+
+            <br>
+            <label for="dropdown" id="encargado">Persona a quien visita</label>
+            <select id="dropdown2">
+              <option value="Mariana Vallejo">Mariana Vallejo</option>
+              <option value="Minerva Santoro">Minerva Santoro</option>
+              <option value="Joaquin Segovia">Joaquin Segovia</option>
+              <option value="Martha Rivas">Martha Rivas</option>
+              <option value="Ernesto Fuentes">Ernesto Fuentes</option>
+              <option value="Álvaro Yañez">Álvaro Yañez</option>
+              <option value="José Váldez">José Váldez</option>
+              <option value="Héctor Velasco">Héctor Velasco</option>
+              <option value="Alfonso Figueroa">Alfonso Figueroa</option>
+              <option value="Mariana Vallejo">Mariana Vallejo</option>
+              <option value="Karina Miramontes">Karina Miramontes</option>
+              <option value="Efraín Soto">Efraín Soto</option>
+              <option value="Christian Herrera">Christian Herrera</option>
+              <option value="Cinthia Toledo">Cinthia Toledo</option>
+              <option value="Roxana Millán">Roxana Millán</option>
+            </select>
+
+            <input type="button" name="Siguiente" id="siguiente" value="Siguiente">
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+
     <!-- ----------- fieldsets ---------------------------->
-      <fieldset>
-      <h2>Por favor ingresa tus datos</h2>
-      <input type="text" name="Name" placeholder="Nombre" required>
-      <input type="text" name="Apellido" placeholder="Apellido" required>
-      <input type="email" name="Mail" placeholder="@Email" required>
-      <input type="button" name="Siguiente" value="Siguiente">
-      </fieldset>
-      
-      <fieldset>
-      <h2>Datos de la Empresa</h2>
-      <label for="dropdown" id="empresas">Por favor indica la empresa que visitas</label>
-      <select id="dropdown">
-        <option value="Sourceful">Sourceful</option>
-        <option value="Waterdrop">Waterdrop</option>
-        <option value="Lemontec">Lemontec</option>
-        <option value="Minu">Minu</option>
-        <option value="Homie">Homie</option>
-        <option value="Shuttle Cloud">Shuttle Cloud</option>
-        <option value="Ludei">Ludei</option>
-        <option value="Alien Vault">Alien Vault</option>
-        <option value="Fora">Fora</option>
-        <option value="Freshwater">Freshwater</option>
-        <option value="Sophia">Sophia</option>
-        <option value="Wepow">Wepow</option>
-        <option value="Urbvan">Urbvan</option>
-        <option value="Klar">Klar</option>
-        <option value="Moons">Moons</option>
-      </select>
-      
-      <label for="dropdown" id="motivo">Motivo de la visita</label>
-      <select id="dropdown1">
-        <option value="Entrevista">Entrevista</option>
-        <option value="Estudiante">Estudiante</option>
-        <option value="Paueteria">Paqueteria</option>
-        <option value="Personal">Personal</option>
-        <option value="Reunion">Reunion</option>
-        <option value="Otro">Otro</option>
-      </select>
-
-      <label id="cita">Tiene cita?</label>
-        <input type="checkbox" >
-        <label for="Si">Si</label>
-        <input type="checkbox" >
-        <label for="No">No</label>
-
-        <br>
-        <label for="dropdown" id="encargado">Persona a quien visita</label>
-        <select id="dropdown2">
-          <option value="Mariana Vallejo">Mariana Vallejo</option>
-          <option value="Minerva Santoro">Minerva Santoro</option>
-          <option value="Joaquin Segovia">Joaquin Segovia</option>
-          <option value="Martha Rivas">Martha Rivas</option>
-          <option value="Ernesto Fuentes">Ernesto Fuentes</option>
-          <option value="Álvaro Yañez">Álvaro Yañez</option>
-          <option value="José Váldez">José Váldez</option>
-          <option value="Héctor Velasco">Héctor Velasco</option>
-          <option value="Alfonso Figueroa">Alfonso Figueroa</option>
-          <option value="Mariana Vallejo">Mariana Vallejo</option>
-          <option value="Karina Miramontes">Karina Miramontes</option>
-          <option value="Efraín Soto">Efraín Soto</option>
-          <option value="Christian Herrera">Christian Herrera</option>
-          <option value="Cinthia Toledo">Cinthia Toledo</option>
-          <option value="Roxana Millán">Roxana Millán</option>
-        </select>
-
-        <input type="button" name="Siguiente" id="siguiente" value="Siguiente">
-    </fieldset>
-
-    <fieldset>
-      <h2>Toma de fotografía</h2>
-      <p>Por favor sonríe </p>
-    </fieldset>
-
-    </form>
-
   </section>
 
   <section id="pantalla2-foto"></section>
+  <!-- <fieldset>
+    <h2>Toma de fotografía</h2>
+    <p>Por favor sonríe </p>
+  </fieldset> -->
   <section id="pantalla3-entrar"></section>
 
   <script src="visitors.js" async defer></script>

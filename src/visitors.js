@@ -1,154 +1,164 @@
 //Aquí va la data de firestore database
-let LoopBuilding = {
-  Empresas: [
-    "Sourceful",
-    {
-      Personal: ["Tom Collins", "Tania Juárez", "Leonardo Torres","Mariana Vallejo"],
-     
-    
-    },
+let LoopBuilding = [
+  {
+    Empresa1A: "Sourceful",
+    Personal: [
+      "Tom Collins",
+      "Tania Juárez",
+      "Leonardo Torres",
+      "Mariana Vallejo",
+    ],
+  },
 
-    "Waterdrop",
-    
-      Personal: ["Minerva Santoro","Rosalia Solís", "Esteban Ruíz", "Mario Ramos"],
-        
-      
-    
+  {
+    Empresa1B: "Waterdrop",
+    Personal: [
+      "Minerva Santoro",
+      "Rosalía Solís",
+      "Esteban Ruíz",
+      "Mario Ramos",
+    ],
+  },
 
-    "Lemontec",
-    {
-      Personal: ["Roberto Plascencia","Joaquin Segovia", "Tito Fuentes ", "Marcos Sura"],
-      
-        
-      },
-    
-    "Minu",
-    {
-      Personal: ["Riyadh Loranca", "Cecilia Tenorio", "Artemio Ibarra","Martha Rivas"],
-      
-      },
-    },
-    "Homie",
-    {
-      Personal: ["Octavio Vergara", "Karen Tello", "Sara Jiménez"],
-      Encargado: "Ernesto Fuentes",
-     
-      },
-    },
+  {
+    Empresa2A: "Lemontech",
+    Personal: [
+      "Roberto Plascencia",
+      "Joaquin Segovia",
+      "Tito Fuentes ",
+      "Marcos Sura",
+    ],
+  },
 
-    "Shuttle Cloud",
-    {
-      Personal: ["Cassandra Valencia", "Valeria García", "Selene Ugalde "],
-      Encargado: "Álvaro Yañez",
-      
-      },
-    
-    "Ludei",
-    {
-      Personal: ["Romina Lezama", "Eugenia Robles", "Maximilano Reyes"],
-      Encargado: "José Váldez",
-      
-      },
-    
-    "Alien Vault",
-    {
-      Personal: ["Raúl Larios", "Tomás Sanchez", "Leonel Yunes"],
-      Encargado: "Héctor Velasco",
-      
-    },
-    "Fora",
-    {
-      Personal: ["Viridiana Toscano", "Noemi Huerta", "Israel León"],
-      Encargado: "Alfonso Figueroa",
-     
-    },
-    "Freshwater",
-    {
-      Personal: ["Jessica Salazar", "Harriet Noelle", "Evaristo Velarde"],
-      Encargado: "Mariana Vallejo",
-      
-      },
-    
-    "Sophia",
-    {
-      Personal: ["Gerardo Tapia", "Frida Serrano", "Alejandra Albores"],
-      Encargado: "Karina Miramontes",
-      
-    },
-    "Wepow",
-    {
-      Personal: ["Citlalli Campos", "Laura Olmos", "Jorge Avendaño"],
-      Encargado: "Efraín Soto",
-      
-        ],
-        "tiene cita": "",
-      },
-    },
-    "Urbvan",
-    {
-      Personal: ["Sofía Valenzuela", "Daniel Guevara", "Román Cruz"],
-      Encargado: "Christian Herrera",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
-      },
-    },
+  {
+    Empresa2B: "Minu",
+    Personal: [
+      "Riyadh Loranca",
+      "Cecilia Tenorio",
+      "Artemio Ibarra",
+      "Martha Rivas",
+    ],
+  },
 
-    "Klar",
-    {
-      Personal: ["Brenda Fonseca", "Isamar Franco", "Lucas M"],
-      Encargado: "Cinthia Toledo",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
-      },
-    },
-    "Moons",
-    {
-      Personal: ["Rogelio Muro", "Emiliano Morales", "Jimena Maciel"],
-      Encargado: "Roxana Millán",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
-      },
-    },
-  ],
-};
+  {
+    Empresa3A: "Homie",
+    Personal: [
+      "Octavio Vergara",
+      "Ernesto Fuentes",
+      "Karen Tello",
+      "Sara Jiménez",
+    ],
+  },
 
+  {
+    Empresa3B: "Shuttle Cloud",
+    Personal: [
+      "Cassandra Valencia",
+      "Álvaro Yañez",
+      "Valeria García",
+      "Selene Ugalde ",
+    ],
+  },
+
+  {
+    Empresa4A: "Ludei",
+    Personal: [
+      "Romina Lezama",
+      "José Váldez",
+      "Eugenia Robles",
+      "Maximilano Reyes",
+    ],
+  },
+
+  {
+    Empresa4B: "Alien Vault",
+    Personal: [
+      "Raúl Larios",
+      "Héctor Velasco",
+      "Tomás Sanchez",
+      "Leonel Yunes",
+    ],
+  },
+
+  {
+    Empresa5A: "Fora",
+    Personal: [
+      "Viridiana Toscano",
+      "Alfonso Figueroa",
+      "Noemi Huerta",
+      "Israel León",
+    ],
+  },
+
+  {
+    Empresa5B: "Freshwater",
+    Personal: [
+      "Jessica Salazar",
+      "Harriet Noelle",
+      "Evaristo Velarde",
+      "Paulina Villaseñor",
+    ],
+  },
+
+  {
+    Empresa6A: "Sophia",
+    Personal: [
+      "Gerardo Tapia",
+      "Karina Miramontes",
+      "Frida Serrano",
+      "Alejandra Albores",
+    ],
+  },
+
+  {
+    Empresa6B: "Wepow",
+    Personal: [
+      "Citlalli Campos",
+      "Laura Olmos",
+      "Jorge Avendaño",
+      "Efraín Soto",
+    ],
+  },
+
+  {
+    Empresa7A: "Urbvan",
+    Personal: [
+      "Sofía Valenzuela",
+      "Daniel Guevara",
+      "Román Cruz",
+      "Christian Herrera",
+    ],
+  },
+
+  {
+    Empresa7B: "Klar",
+    Personal: [
+      "Brenda Fonseca",
+      "Isamar Franco",
+      "Lucas Molina",
+      "Cinthia Toledo",
+    ],
+  },
+
+  {
+    Empresa8A: "Moons",
+    Personal: [
+      "Rogelio Muro",
+      "Emiliano Morales",
+      "Jimena Maciel",
+      "Roxana Millán",
+    ],
+  },
+
+  {
+    Empresa8B: "SumUp",
+    Personal: [
+      "Francisco Mejía",
+      "Zaira Arellano",
+      "Jatziri Avellaneda",
+      "Elena Romay",
+    ],
+  },
+];
 
 // Funciones para formato de visitantes
-
-
