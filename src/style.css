@@ -68,8 +68,7 @@ boton:focus {
 /* Pantalla1-register */
 #pantalla1-registro {
   background: url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
   font-family: "roboto", "sans-serif";
   width: 100%;
@@ -162,8 +161,26 @@ boton:focus {
 }
 
 .empresa label {
-  font-weight: bold;
-  font-size: 1em;
-  font-family: sans-serif;
-  color: #333;
+  font-style: italic;
+  font-size: 20px;
+}
+#empresas {
+  margin: 1vh;
+  height: 5vh;
+  justify-content: left;
+  display: flex;
+}
+.s {
+  height: 1.5vh;
+}
+#motivo {
+  margin: 0px;
+  height: 3vh;
+  justify-content: left;
+  display: flex;
+}
+#cita {
+  margin: 0px;
+  justify-content: left;
+  display: flex;
 }
