@@ -112,11 +112,12 @@ footer {
 }
 /* ------------VISITORS----- */
 /* Pantalla1-register */
-#pantalla1-registro {
+html {
   background: url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
   background-size: cover;
   background-attachment: fixed;
-
+}
+#pantalla1-registro {
   font-family: "roboto", "sans-serif";
   width: 100%;
   height: 100vh;
