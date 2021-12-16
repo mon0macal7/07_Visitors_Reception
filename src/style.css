@@ -114,7 +114,8 @@ footer {
 /* Pantalla1-register */
 #pantalla1-registro {
   background: url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-
+  background-size: cover;
+  background-attachment: fixed;
   box-sizing: border-box;
   font-family: "roboto", "sans-serif";
   width: 100%;
