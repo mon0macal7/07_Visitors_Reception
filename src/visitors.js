@@ -6,4 +6,6 @@ fetch("../data/loop.json")
 
 let iterarEmpresa = (data) => {
   console.log(data.LoopBuilding);
+  for (const empresa of data.LoopBuilding) {
+  }
 };
