@@ -23,14 +23,14 @@
             <input type="text" name="Name" placeholder="Nombre" class="name" required>
             <input type="text" name="Apellido" placeholder="Apellido" class="lastName" required>
             <input type="email" name="Mail" placeholder="@Email" class="email" required>
-            <input type="button" name="Siguiente" value="Registrarse" class="next">
+
           </form>
         </div>
         <div class="empresa">
           <h2>Datos de la Empresa</h2>
           <form class="empresa-items">
-            <label for="dropdown" id="empresas">Por favor indica la empresa que visitas</label>
-            <select id="dropdown">
+            <label for="dropdown" id="empresas">Elige la empresa</label>
+            <select id="dropdown" class="empres-select">
               <option value="Sourceful">Sourceful</option>
               <option value="Waterdrop">Waterdrop</option>
               <option value="Lemontec">Lemontec</option>
@@ -48,8 +48,9 @@
               <option value="Moons">Moons</option>
             </select>
 
+            <div class="s"></div>
             <label for="dropdown" id="motivo">Motivo de la visita</label>
-            <select id="dropdown1">
+            <select id="dropdown1" class="empres-select">
               <option value="Entrevista">Entrevista</option>
               <option value="Estudiante">Estudiante</option>
               <option value="Paueteria">Paqueteria</option>
@@ -57,16 +58,17 @@
               <option value="Reunion">Reunion</option>
               <option value="Otro">Otro</option>
             </select>
-
+            <div class="s"></div>
             <label id="cita">Tiene cita?</label>
-            <input type="checkbox">
+            <input type="checkbox" class="empres-select">
             <label for="Si">Si</label>
-            <input type="checkbox">
+            <input type="checkbox" class="empres-select">
             <label for="No">No</label>
 
             <br>
-            <label for="dropdown" id="encargado">Persona a quien visita</label>
-            <select id="dropdown2">
+            <div class="s"></div>
+            <label for="dropdown" id="encargado">Personal vistiado</label>
+            <select id="dropdown2" class="empres-select">
               <option value="Mariana Vallejo">Mariana Vallejo</option>
               <option value="Minerva Santoro">Minerva Santoro</option>
               <option value="Joaquin Segovia">Joaquin Segovia</option>
@@ -84,7 +86,7 @@
               <option value="Roxana Millán">Roxana Millán</option>
             </select>
 
-            <input type="button" name="Siguiente" id="siguiente" value="Siguiente">
+            <input type="button" name="Siguiente" value="Registrarse" class="next">
 
           </form>
 

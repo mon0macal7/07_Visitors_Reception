@@ -1,10 +1,12 @@
 /* Pantalla 1-Inicio */
 #pantalla-1-inicio {
   background: url(https://i.pinimg.com/564x/14/3c/c4/143cc440e4b1c4cd7deff3663a8b00f9.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  row-gap: 10px;
+  padding: 0 auto;
   width: auto;
-  height: 82vh;
-  margin: 0;
-  padding: 0;
+  height: 100vh;
 }
 .logo {
   justify-content: flex-end;
@@ -21,6 +23,10 @@
   align-items: center;
   align-content: center;
   width: auto;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 .boton {
   box-sizing: border-box;
@@ -63,13 +69,52 @@ boton:focus {
   justify-content: center;
   text-align: center;
 }
+footer {
+  color: aliceblue;
+  background-color: black;
+  grid-area: footer;
+  text-align: center;
+  list-style-type: none;
+  justify-content: center;
+  margin-bottom: -7rem;
+}
+.collaborator {
+  font-family: "Jura", sans-serif;
+  color: rgba(144, 144, 151, 0.753);
+  text-shadow: rgb(138, 136, 136);
+}
 
+#social {
+  margin-top: 0.5%;
+}
+
+#social a i {
+  color: rgba(156, 156, 160, 0.767);
+}
+
+#social a i:hover {
+  transform: scale(1.3);
+  transition: transform 0.5s ease-out;
+  color: #ff9204;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 200px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+}
 /* ------------VISITORS----- */
 /* Pantalla1-register */
 #pantalla1-registro {
   background: url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
   font-family: "roboto", "sans-serif";
   width: 100%;
@@ -109,7 +154,7 @@ boton:focus {
 
 .register input {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   font-size: 16px;
   margin-bottom: 25px;
   border-top-style: none;
@@ -122,16 +167,6 @@ boton:focus {
 .register input:active,
 .register input:focus {
   outline: none;
-}
-
-.register .next {
-  width: auto;
-  padding: 10px;
-  background: #f17108;
-  color: white;
-  font-size: 12px;
-  box-shadow: 0 0 3px 0 rbga(0, 0, 0, 0.2);
-  cursor: pointer;
 }
 
 .register::after {
@@ -158,12 +193,49 @@ boton:focus {
 
 .empresa h2 {
   color: #fff;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 
 .empresa label {
-  font-weight: bold;
-  font-size: 1em;
-  font-family: sans-serif;
-  color: #333;
+  font-style: italic;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+}
+#empresas {
+  margin: 1vh;
+  height: 5vh;
+  justify-content: left;
+  display: flex;
+}
+.s {
+  height: 1.5vh;
+}
+#motivo {
+  margin: 0px;
+  height: 3vh;
+  justify-content: left;
+  display: flex;
+}
+#cita {
+  margin: 0px;
+  justify-content: left;
+  display: flex;
+}
+
+.empresa .next {
+  width: auto;
+  padding: 10px;
+  background: #f17108;
+  color: white;
+  font-size: 12px;
+  box-shadow: 0 0 3px 0 rbga(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.empres-select {
+  box-shadow: 1px 1px 1px 0px rgb(0, 0, 0);
+  color: white;
+  background-color: rgb(46, 197, 207);
+  border-radius: 5px;
 }
