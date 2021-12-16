@@ -3,104 +3,36 @@ let LoopBuilding = {
   Empresas: [
     "Sourceful",
     {
-      Personal: ["Tom Collins", "Tania Juárez", "Leonardo Torres"],
-      Encargado: "Mariana Vallejo",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
-      },
+      Personal: ["Tom Collins", "Tania Juárez", "Leonardo Torres","Mariana Vallejo"],
+     
+    
     },
 
     "Waterdrop",
-    {
-      Personal: ["Rosalia Solís", "Esteban Ruíz", "Mario Ramos"],
-      Encargado: "Minerva Santoro",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
-      },
-    },
+    
+      Personal: ["Minerva Santoro","Rosalia Solís", "Esteban Ruíz", "Mario Ramos"],
+        
+      
+    
 
     "Lemontec",
     {
-      Personal: ["Roberto Plascencia", "Tito Fuentes ", "Marcos Sura"],
-      Encargado: "Joaquin Segovia",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
+      Personal: ["Roberto Plascencia","Joaquin Segovia", "Tito Fuentes ", "Marcos Sura"],
+      
+        
       },
-    },
+    
     "Minu",
     {
-      Personal: ["Riyadh Loranca", "Cecilia Tenorio", "Artemio Ibarra"],
-      Encargado: "Martha Rivas",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
+      Personal: ["Riyadh Loranca", "Cecilia Tenorio", "Artemio Ibarra","Martha Rivas"],
+      
       },
     },
     "Homie",
     {
       Personal: ["Octavio Vergara", "Karen Tello", "Sara Jiménez"],
       Encargado: "Ernesto Fuentes",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
+     
       },
     },
 
@@ -108,138 +40,46 @@ let LoopBuilding = {
     {
       Personal: ["Cassandra Valencia", "Valeria García", "Selene Ugalde "],
       Encargado: "Álvaro Yañez",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
+      
       },
-    },
+    
     "Ludei",
     {
       Personal: ["Romina Lezama", "Eugenia Robles", "Maximilano Reyes"],
       Encargado: "José Váldez",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
+      
       },
-    },
+    
     "Alien Vault",
     {
       Personal: ["Raúl Larios", "Tomás Sanchez", "Leonel Yunes"],
       Encargado: "Héctor Velasco",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
-      },
+      
     },
     "Fora",
     {
       Personal: ["Viridiana Toscano", "Noemi Huerta", "Israel León"],
       Encargado: "Alfonso Figueroa",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
-      },
+     
     },
     "Freshwater",
     {
       Personal: ["Jessica Salazar", "Harriet Noelle", "Evaristo Velarde"],
       Encargado: "Mariana Vallejo",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
+      
       },
-    },
+    
     "Sophia",
     {
       Personal: ["Gerardo Tapia", "Frida Serrano", "Alejandra Albores"],
       Encargado: "Karina Miramontes",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
-        ],
-        "tiene cita": "",
-      },
+      
     },
     "Wepow",
     {
       Personal: ["Citlalli Campos", "Laura Olmos", "Jorge Avendaño"],
       Encargado: "Efraín Soto",
-      Registro: {
-        Nombre: "",
-        Apellido: "",
-        Correo: "",
-        Teléfono: "",
-        "motivo de la visita": [
-          entrevista,
-          paqueteria,
-          personal,
-          reunion,
-          estudiante,
-          otro,
+      
         ],
         "tiene cita": "",
       },
