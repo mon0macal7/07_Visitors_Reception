@@ -72,9 +72,9 @@ boton:focus {
   justify-content: center;
   text-align: center;
 }
-.espacio {
-  height: 29.5vh;
-}
+/* .espacio {
+  height: 66vh;
+} */
 footer {
   color: aliceblue;
   background-color: black;
@@ -105,12 +105,35 @@ footer {
   color: #ff9204;
 }
 
+@media screen and (max-width: 1600px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  .espacio {
+    height: 29vh;
+  }
+}
+@media screen and (max-width: 1300px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  .espacio {
+    height: 29vh;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   body {
     width: 100%;
     height: 100vh;
   }
+  .espacio {
+    height: 50vh;
+  }
 }
+
 @media screen and (min-width: 200px) {
   body {
     width: 100%;
