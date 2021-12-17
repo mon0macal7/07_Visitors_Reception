@@ -14,13 +14,12 @@ let iterarEmpresa = (data) => {
 
   for (const oficina of data.LoopBuilding) {
     console.log(oficina.Empresa);
-    console.log();
+    console.log(oficina.Personal[3]);
     empresa.innerHTML += `<select onclick= "dropdown" class="empres-select">
     <option value="Sourceful">${oficina.Empresa}</option>
             </select>`;
     personal.innerHTML += `<select onclick = "dropdown2" class = "empres-select">
-    <option value = "Empleado">${oficina.Personal}</option>
+    <option value = "Empleado">${oficina.Personal[3]}</option>
             </select>`;
   }
 };
-
