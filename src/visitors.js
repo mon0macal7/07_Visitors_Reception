@@ -6,6 +6,8 @@ fetch("../data/loop.json")
 
 //Función iterar empresas
 let empresa = document.getElementById("dropdown");
+//Funcion iterar personal
+let personal = document.getElementById("dropdown2");
 
 let iterarEmpresa = (data) => {
   console.log(data.LoopBuilding);
@@ -15,18 +17,10 @@ let iterarEmpresa = (data) => {
     console.log();
     empresa.innerHTML += `<select onclick= "dropdown" class="empres-select">
     <option value="Sourceful">${oficina.Empresa}</option>
-             </select>`;
+            </select>`;
+    personal.innerHTML += `<select onclick = "dropdown2" class = "empres-select">
+    <option value = "Empleado">${oficina.Personal}</option>
+            </select>`;
   }
 };
-//Funcion iterar personal
-let personal = document.getElementById("dropdown2");
 
-let iterarPersonal = (data) => {
-  console.log(data.LoopBuilding);
-
-  for (const encargado in LoopBuilding) {
-    if (Object.hasOwnProperty.call(object, encargado)) {
-      const element = object[encargado];
-    }
-  }
-};
