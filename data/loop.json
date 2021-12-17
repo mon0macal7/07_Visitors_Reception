@@ -1,7 +1,7 @@
 {
   "LoopBuilding": [
     {
-      "Empresa1A": "Sourceful",
+      "Empresa": "Sourceful",
       "Personal": [
         "Tom Collins",
         "Tania Juárez",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "Empresa1B": "Waterdrop",
+      "Empresa": "Waterdrop",
       "Personal": [
         "Minerva Santoro",
         "Rosalía Solís",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "Empresa2A": "Lemontech",
+      "Empresa": "Lemontech",
       "Personal": [
         "Roberto Plascencia",
         "Joaquin Segovia",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "Empresa2B": "Minu",
+      "Empresa": "Minu",
       "Personal": [
         "Riyadh Loranca",
         "Cecilia Tenorio",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "Empresa3A": "Homie",
+      "Empresa": "Homie",
       "Personal": [
         "Octavio Vergara",
         "Ernesto Fuentes",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "Empresa3B": "Shuttle Cloud",
+      "Empresa": "Shuttle Cloud",
       "Personal": [
         "Cassandra Valencia",
         "Álvaro Yañez",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "Empresa4A": "Ludei",
+      "Empresa": "Ludei",
       "Personal": [
         "Romina Lezama",
         "José Váldez",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "Empresa4B": "Alien Vault",
+      "Empresa": "Alien Vault",
       "Personal": [
         "Raúl Larios",
         "Héctor Velasco",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "Empresa5A": "Fora",
+      "Empresa": "Fora",
       "Personal": [
         "Viridiana Toscano",
         "Alfonso Figueroa",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "Empresa5B": "Freshwater",
+      "Empresa": "Freshwater",
       "Personal": [
         "Jessica Salazar",
         "Harriet Noelle",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "Empresa6A": "Sophia",
+      "Empresa": "Sophia",
       "Personal": [
         "Gerardo Tapia",
         "Karina Miramontes",
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "Empresa6B": "Wepow",
+      "Empresa": "Wepow",
       "Personal": [
         "Citlalli Campos",
         "Laura Olmos",
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "Empresa7A": "Urbvan",
+      "Empresa": "Urbvan",
       "Personal": [
         "Sofía Valenzuela",
         "Daniel Guevara",
@@ -118,7 +118,7 @@
       ]
     },
     {
-      "Empresa7B": "Klar",
+      "Empresa": "Klar",
       "Personal": [
         "Brenda Fonseca",
         "Isamar Franco",
@@ -127,7 +127,7 @@
       ]
     },
     {
-      "Empresa8A": "Moons",
+      "Empresa": "Moons",
       "Personal": [
         "Rogelio Muro",
         "Emiliano Morales",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "Empresa8B": "SumUp",
+      "Empresa": "SumUp",
       "Personal": [
         "Francisco Mejía",
         "Zaira Arellano",
