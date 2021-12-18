@@ -64,7 +64,7 @@
 .video-fondo {
   margin: 0;
 }
-video {
+.video-fondo {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
