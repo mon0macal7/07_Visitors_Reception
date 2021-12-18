@@ -97,6 +97,16 @@
     <video muted="muted" id="video"></video>
     <canvas id="canvas" style="display: none;"></canvas>
     </div>
+
+    <script>
+      // -------------------Función para boton de registro--------------------------------//
+const registro = document.getElementById('btn-siguiente')
+registro.addEventListener('click', () => {
+    document.getElementById('pantalla1-registro').hidden = true;
+    document.getElementById('pantalla2-foto').hidden = false;
+})
+    </script>
+
     
   </section>
 
