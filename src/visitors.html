@@ -87,16 +87,10 @@
 
   <section hidden id="pantalla2-foto">
 
-    <!-- -----------------Boton para foto ----------- -->
-    <div>
-      <select name="dispositivos" id="dispositivos"></select>
-      <button id="btn-foto">Tomar Fotografría</button>
-    </div>
-    <!-- ------------------ Video ----------------------->
-    <div>
-    <video muted="muted" id="video"></video>
-    <canvas id="canvas" style="display: none;"></canvas>
-    </div>
+    <!-- -----------------Tomar fotografía ----------- -->
+    <video id="video"></video>
+    <button id="startbutton">Take photo</button>
+    <canvas id="canvas"></canvas>
 
     <script>
       // -------------------Función para boton de registro--------------------------------//
