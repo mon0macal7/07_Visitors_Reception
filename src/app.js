@@ -1,5 +1,5 @@
 //-------------------Se atraen las pantallas---------------------------------------//
-document.getElementById('pantalla1-login').hidden = false;
+document.getElementById('pantalla1-login').hidden= false;
 document.getElementById('pantalla2-visitantes').hidden = true;
 document.getElementById('pantalla1-registro').hidden = false;
 document.getElementById('pantalla2-foto').hidden = true;
