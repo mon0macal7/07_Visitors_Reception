@@ -72,7 +72,7 @@
               <option value="Roxana Millán">Roxana Millán</option> -->
             </select>
 
-            <input type="button" name="Siguiente" value="Registrarse" class="next">
+            <input id="btn-siguiente" type="button" name="Siguiente" value="Registrarse" class="next">
 
           </form>
 
@@ -85,14 +85,25 @@
 
   </section>
 
-  <section id="pantalla2-foto"></section>
-  <!-- <fieldset>
-    <h2>Toma de fotografía</h2>
-    <p>Por favor sonríe </p>
-  </fieldset> -->
+  <section hidden id="pantalla2-foto">
+
+    <!-- -----------------Boton para foto ----------- -->
+    <div>
+      <select name="dispositivos" id="dispositivos"></select>
+      <button id="btn-foto">Tomar Fotografría</button>
+    </div>
+    <!-- ------------------ Video ----------------------->
+    <div>
+    <video muted="muted" id="video"></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    
+  </section>
+
   <section id="pantalla3-entrar"></section>
 
   <script src="visitors.js" async defer></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
