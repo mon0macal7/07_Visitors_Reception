@@ -33,12 +33,20 @@
   </section>
 
   <section hidden id="pantalla2-visitantes">
-
+    <h1>g</h1>
   </section>
   <section id="pantalla3-abandono">
 
   </section>
 
+  <script>
+    // -------------------Función para boton de registro--------------------------------//
+    const admin = document.getElementById('btn')
+    admin.addEventListener('click', () => {
+      document.getElementById('pantalla1-login').hidden = true;
+      document.getElementById('pantalla2-visitantes').hidden = false;
+    })
+  </script>
   <script src="admin.js" async defer></script>
 </body>
 
