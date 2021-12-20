@@ -1,13 +1,13 @@
 /* --------------------------------VISITORS---------------- */
 /* Pantalla1-register */
-/* html {
+html {
   background: url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
-} */
+}
 #pantalla1-registro {
   font-family: "roboto", "sans-serif";
   width: 100%;
@@ -132,3 +132,5 @@
   background-color: rgb(46, 197, 207);
   border-radius: 5px;
 }
+
+/* Camara y foto */
