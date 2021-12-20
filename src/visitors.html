@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="admin.html">
   <link href="index.html">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="visitors.css" />
 </head>
 
 <body>
@@ -31,7 +31,7 @@
           <form class="empresa-items">
             <label for="dropdown" id="empresas">Empresa que visita</label>
             <select id="dropdown" class="empres-select"></select>
-              
+
 
             <div class="s"></div>
             <label for="dropdown" id="motivo">Motivo de la visita</label>
@@ -72,7 +72,7 @@
               <option value="Roxana Millán">Roxana Millán</option> -->
             </select>
 
-            <input type="button" name="Siguiente" value="Registrarse" class="next">
+            <input id="btn-siguiente" type="button" name="Siguiente" value="Registrarse" class="next">
 
           </form>
 
@@ -85,14 +85,55 @@
 
   </section>
 
-  <section id="pantalla2-foto"></section>
-  <!-- <fieldset>
-    <h2>Toma de fotografía</h2>
-    <p>Por favor sonríe </p>
-  </fieldset> -->
+  <section hidden id="pantalla2-foto">
+
+    <div style="text-align: center; ">
+      <video id="video" autoplay="true"></video>
+    </div>
+    <div style="text-align: center; margin-bottom: 10px;">
+      <button id="tomarFoto" style="padding: 10px;">FOTO</button>
+    </div>
+    <div>
+      <canvas id="canvas" height="720" width="1280"></canvas>
+    </div>
+    <script>
+      const video = document.getElementById('video')
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(
+          (stream) => {
+            video.srcObject = stream;
+            console.log(stream)
+          }
+        )
+        .catch((error) => {
+          console.log(error)
+        })
+      document.getElementById("tomarFoto").addEventListener("click", () => {
+        tomarFoto()
+      })
+
+      function tomarFoto() {
+        const canvas = document.getElementById("canvas")
+        let ctx = canvas.getContext('2d');
+        ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight)
+      }
+    </script>
+    <script>
+      // -------------------Función para boton de registro--------------------------------//
+      const registro = document.getElementById('btn-siguiente')
+      registro.addEventListener('click', () => {
+        document.getElementById('pantalla1-registro').hidden = true;
+        document.getElementById('pantalla2-foto').hidden = false;
+      })
+    </script>
+
+
+  </section>
+
   <section id="pantalla3-entrar"></section>
 
-  <script src="visitors.js" async defer></script>
+  <!-- <script src="visitors.js" async defer></script> -->
+  <script src="app.js"></script>
 </body>
 
 </html>

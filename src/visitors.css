@@ -1,0 +1,136 @@
+/* --------------------------------VISITORS---------------- */
+/* Pantalla1-register */
+html {
+  background: url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#pantalla1-registro {
+  font-family: "roboto", "sans-serif";
+  width: 100%;
+  height: 100vh;
+}
+
+.container1 {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empresa-container {
+  display: flex;
+  width: 650px;
+  height: auto;
+  background: white;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register,
+.empresa {
+  flex: 1;
+}
+.register {
+  padding: 40px;
+  position: relative;
+}
+
+.register h2 {
+  color: #797979;
+  margin-bottom: 30px;
+}
+
+.register input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 1px solid #a8a8a8;
+  color: #333;
+}
+
+.register input:active,
+.register input:focus {
+  outline: none;
+}
+
+.register::after {
+  content: ">";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  right: -23px;
+  padding: 10px;
+  text-align: center;
+  font-size: 19px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: -1px 1px 3px 1px rbga(0, 0, 0, 0.2);
+  color: #7c7c7c;
+}
+
+.empresa {
+  background-image: linear-gradient(to bottom right, #1ab6b6, #4caca6);
+  padding: 40px;
+}
+
+.empresa h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.empresa label {
+  font-style: italic;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+}
+#empresas {
+  margin: 1vh;
+  height: 5vh;
+  justify-content: left;
+  display: flex;
+}
+.s {
+  height: 1.5vh;
+}
+#motivo {
+  margin: 0px;
+  height: 3vh;
+  justify-content: left;
+  display: flex;
+}
+#cita {
+  margin: 0px;
+  justify-content: left;
+  display: flex;
+}
+
+.empresa .next {
+  width: auto;
+  padding: 10px;
+  background: #f17108;
+  color: white;
+  font-size: 12px;
+  box-shadow: 0 0 3px 0 rbga(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.empres-select {
+  box-shadow: 1px 1px 1px 0px rgb(0, 0, 0);
+  color: white;
+  background-color: rgb(46, 197, 207);
+  border-radius: 5px;
+}
+
+/* Camara y foto */
