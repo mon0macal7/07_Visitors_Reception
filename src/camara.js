@@ -1,4 +1,10 @@
- const video = document.getElementById('video')
+
+
+const registro = document.getElementById('btn-siguiente')
+      registro.addEventListener('click', () => {
+        document.getElementById('pantalla1-registro').hidden = true;
+        document.getElementById('pantalla2-foto').hidden = false;
+         const video = document.getElementById('video')
       navigator.mediaDevices.getUserMedia({ video: true })
         .then(
           (stream) => {
@@ -17,5 +23,8 @@
         const canvas = document.getElementById("canvas")
         let ctx = canvas.getContext('2d');
         ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight)
-      }
+      
+    
+}
+      })
     

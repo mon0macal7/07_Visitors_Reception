@@ -125,6 +125,15 @@ html {
   box-shadow: 0 0 3px 0 rbga(0, 0, 0, 0.2);
   cursor: pointer;
 }
+.empresa .next1 {
+  width: auto;
+  padding: 10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  box-shadow: 0 0 3px 0 rbga(0, 0, 0, 0.2);
+  cursor: pointer;
+}
 
 .empres-select {
   box-shadow: 1px 1px 1px 0px rgb(0, 0, 0);
@@ -168,7 +177,7 @@ html {
   border-radius: 50%;
   width: 300px;
 }
-.ins{
+.ins {
   text-align: center;
   font-style: italic;
   color: white;
