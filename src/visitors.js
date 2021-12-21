@@ -37,3 +37,16 @@ let selectEmpresa = (index) => {
   }
 };
 traerData();
+
+// guardar datos de  form en un objeto
+
+let formulario = {
+  nombre: document.getElementById("").value,
+  contacto: document.getElementById("").value,
+  empresa: document.getElementById("").value,
+  persona: document.getElementById("").value,
+  asunto: document.getElementById("").value,
+  cita: document.getElementById("").value,
+};
+
+console.log(formulario);
