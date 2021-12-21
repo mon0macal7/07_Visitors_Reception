@@ -72,7 +72,10 @@
               <option value="Roxana Millán">Roxana Millán</option> -->
             </select>
 
+            <a href="index.html"><button type="button" id="regresarvisitors" class="next1"><i
+                  class="bi bi-arrow-90deg-left"></i>Regresar</button></a>
             <input id="btn-siguiente" type="button" name="Siguiente" value="Registrarse" class="next">
+
 
           </form>
 
@@ -98,24 +101,25 @@
       <canvas id="canvas" height="450" width="600"></canvas>
     </div>
 
-    <script>
-      // -------------------Función para boton de registro--------------------------------//
-      const registro = document.getElementById('btn-siguiente')
-      registro.addEventListener('click', () => {
-        document.getElementById('pantalla1-registro').hidden = true;
-        document.getElementById('pantalla2-foto').hidden = false;
-      })
-    </script>
+
 
 
   </section>
 
   <section id="pantalla3-entrar"></section>
 
+
+  <!-- <script>
+    const back = document.getElementById("regresarvisitors")
+    back.addEventListener('click', () => {
+      document.getElementById('pantalla1-registro').hidden = false;
+    })
+  </script> -->
+
   <script src="visitors.js" async defer></script>
   <script src="app.js"></script>
   <script src="administration.js"></script>
-  <script src="camara.js" type="module"> </script>
+  <script src="camara.js"> </script>
 </body>
 
 </html>
