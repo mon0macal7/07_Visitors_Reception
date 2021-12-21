@@ -44,24 +44,25 @@ for (const empresa of arrayEmpresas[0].LoopBuilding) {
   // console.log(arrayPersonal);
   let empresas = document.getElementById('dropdown');
   empresas.innerHTML += `<select onclick= "dropdown" class="empres-select">
-        <option value = "Empresa">${empresa.Empresa}</option>
+        <option onclick="${empresa.Empresa}" value = "Empresa">${empresa.Empresa}</option>
                 </select>`
+                console.log(empresas);
 }
 
-let empleados = document.getElementById('dropdown');
+// let empleados = document.getElementById('dropdown');
 
-empleados.addEventListener('click', () => {
-  let elegirEmpleado = document.getElementById('dropdown')
-  // console.log(elegirEmpleado);
-  console.log(arrayEmpresas[0].LoopBuilding);
-  for (const empleado of arrayEmpresas[0].LoopBuilding) {
-    console.log(empleado);
-    let personal = document.getElementById('dropdown2')
-    personal.innerHTML += `<select onclick= "dropdown" class="empres-select">
-    <option value = "Empresa">${empleado.Personal}</option>
-            </select>`
-  }
-})
+// empleados.addEventListener('click', () => {
+//   let elegirEmpleado = document.getElementById('dropdown')
+//   // console.log(elegirEmpleado);
+//   console.log(arrayEmpresas[0].LoopBuilding);
+//   for (const empleado of arrayEmpresas[0].LoopBuilding) {
+//     console.log(empleado);
+//     let personal = document.getElementById('dropdown2')
+//     personal.innerHTML += `<select onclick= "dropdown" class="empres-select">
+//     <option value = "Empresa">${empleado.Personal}</option>
+//             </select>`
+//   }
+// })
 
 })}
 traerData();
