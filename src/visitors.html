@@ -86,38 +86,18 @@
   </section>
 
   <section hidden id="pantalla2-foto">
-
-    <div style="text-align: center; ">
+    <h1 class="ins">Centrate en la camara y Sonrie</h1>
+    <h2 class="ins">Presiona el boton "foto" para tomarte una fotografia</h2>
+    <div class="video">
       <video id="video" autoplay="true"></video>
     </div>
-    <div style="text-align: center; margin-bottom: 10px;">
-      <button id="tomarFoto" style="padding: 10px;">FOTO</button>
+    <div class="botonFoto">
+      <button id="tomarFoto">FOTO</button>
     </div>
-    <div>
-      <canvas id="canvas" height="720" width="1280"></canvas>
+    <div class="canvas">
+      <canvas id="canvas" height="450" width="600"></canvas>
     </div>
-    <script>
-      const video = document.getElementById('video')
-      navigator.mediaDevices.getUserMedia({ video: true })
-        .then(
-          (stream) => {
-            video.srcObject = stream;
-            console.log(stream)
-          }
-        )
-        .catch((error) => {
-          console.log(error)
-        })
-      document.getElementById("tomarFoto").addEventListener("click", () => {
-        tomarFoto()
-      })
 
-      function tomarFoto() {
-        const canvas = document.getElementById("canvas")
-        let ctx = canvas.getContext('2d');
-        ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight)
-      }
-    </script>
     <script>
       // -------------------Función para boton de registro--------------------------------//
       const registro = document.getElementById('btn-siguiente')
@@ -132,8 +112,10 @@
 
   <section id="pantalla3-entrar"></section>
 
-  <!-- <script src="visitors.js" async defer></script> -->
+  <script src="visitors.js" async defer></script>
   <script src="app.js"></script>
+  <script src="administration.js"></script>
+  <script src="camara.js" type="module"> </script>
 </body>
 
 </html>
