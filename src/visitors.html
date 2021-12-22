@@ -103,23 +103,35 @@
     </div>
     <button id="enviar">Guardar</button>
 
-
-
-
   </section>
 
-  <section id="pantalla3-entrar"></section>
 
+<!-- SDK para inicializar firebase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  <!-- <script>
-    const back = document.getElementById("regresarvisitors")
-    back.addEventListener('click', () => {
-      document.getElementById('pantalla1-registro').hidden = false;
-    })
-  </script> -->
-  <script src="administration.js" type="module"></script>
-  <script src="visitors.js" async defer></script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDBQknoRhW8FG_UMHOkSOY63pLTl2dF1mo",
+    authDomain: "registro-de-visitantes-628e5.firebaseapp.com",
+    projectId: "registro-de-visitantes-628e5",
+    storageBucket: "registro-de-visitantes-628e5.appspot.com",
+    messagingSenderId: "365504363374",
+    appId: "1:365504363374:web:d66d5fcd624fbc21259f7f"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+  
+  <script src="visitors.js" ></script>
   <script src="camara.js"> </script>
+
+  <!----------------------Liga para librería de JQuery--------------------------------  ------------------------------->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 </body>
 
