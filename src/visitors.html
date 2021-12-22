@@ -11,6 +11,7 @@
   <link href="admin.html">
   <link href="index.html">
   <link rel="stylesheet" href="visitors.css" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
           <h2>Ingresa tus datos</h2>
           <form id="formulario">
             <input id= "nombre"type="text" name="Name" placeholder="Nombre" class="name" required>
-            <input id= "nombre"type="text" name="Apellido" placeholder="Apellido" class="lastName" required>
-            <input type="email" name="Mail" placeholder="@Email" class="email" required>
+            <input id= "apellido"type="text" name="Apellido" placeholder="Apellido" class="lastName" required>
+            <input id="mail" type="email" name="Mail" placeholder="@Email" class="email" required>
 
           </form>
         </div>
@@ -86,7 +87,7 @@
     <div class="canvas">
       <canvas id="canvas" height="450" width="600"></canvas>
     </div>
-    <div id="enviar"></div>
+    <button id="enviar">Guardar</button>
 
 
 
@@ -103,10 +104,16 @@
     })
   </script> -->
 
+      <!--------------- Se agrega el código que será nuesta conexión para utilizar firebase ----------------->
+  <script type="module">
+
+  </script>
+
   <script src="visitors.js" async defer></script>
   <script src="app.js"></script>
   <script src="administration.js"></script>
   <script src="camara.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
