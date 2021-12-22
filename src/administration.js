@@ -23,15 +23,17 @@ const db = getFirestore(app);
 export default db;
 
 
-    const saveUser = (user) => {
+    const saveUser = (user) => { 
     import { collection, addDoc } from "firebase/firestore";
 
 try {
     const docRef = await addDoc(collection(db, "usuarios"), {
     user
     });
+    console.log("Document written with ID: ", docRef.id);
     mensaje();
 } catch (e) {
+      console.error("Error adding document: ", e);
     mensajeError();
 }
     }
