@@ -7,9 +7,10 @@ entrada.addEventListener('click', () => {
     let usuario = document.getElementById('mail').value 
     let contraseña = document.getElementById('password').value
     if(usuario == 'codepanthers884@gmail.com' && contraseña == 1){
-        document.getElementById('pantalla1-login').hidden = true;
-        document.getElementById('pantalla2-visitantes').hidden = false;
+        document.getElementById('pantalla1-login')
+        window.location.href = "./dash.html"
     }else{
         alert('Usuario y/o contraseña incorrectos')
     }
 })
+
