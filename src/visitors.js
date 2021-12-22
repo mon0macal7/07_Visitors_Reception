@@ -16,13 +16,13 @@ const traerData = () => {
 // iterar empresas
 const iterarEmpresas = (arraydeEmpresas) => {
   for (const [index, empresa] of arraydeEmpresas.entries()) {
-    console.log(empresa);
+    //console.log(empresa);
 
     let empresas = document.getElementById("dropdown");
     empresas.innerHTML += `
         <option onclick= "selectEmpresa('${index}')">${empresa.Empresa}</option>
                 `;
-    console.log(empresas);
+    //console.log(empresas);
   }
 };
 let selectEmpresa = (index) => {
@@ -33,7 +33,7 @@ let selectEmpresa = (index) => {
     console.log(empleado);
 
     empleados.innerHTML += `<option>${empleado} </option>`;
-    console.log(empleados);
+    //console.log(empleados);
   }
 };
 traerData();

@@ -26,5 +26,8 @@
   "homepage": "https://github.com/mon0macal7/07_Visitors_Reception#readme",
   "devDependencies": {
     "eslint": "^8.4.1"
+  },
+  "dependencies": {
+    "firebase": "^9.6.1"
   }
 }
