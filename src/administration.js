@@ -60,6 +60,7 @@ $("#enviar").on('click', () => {
     let motivo = $("#motivo").val()
     let cita = $("#cita").val()
     let persona = $("#dropdown2").val()
-    const user = {nombre, apellido, mail, empresa, motivo, cita, persona}
+    let foto = $('·tomarFoto').val()
+    const user = {nombre, apellido, mail, empresa, motivo, cita, persona, foto}
     saveUser(user);
 })
