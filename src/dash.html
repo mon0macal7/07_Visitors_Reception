@@ -1,166 +1,141 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <section2>
-      <header>
-      <span class="name">Loop Work.Co</span>
-      <img src="" alt="logo" />
-    </header>
 
-    <main>
-      <div class="cards">
-        <div class="card-alone">
-          <div>
-            <h5>Ocupación del día</h5>
-            <h1>21</h1>
-          </div>
-          <div class="icon">
-            <i class="fas fa-calendar-day"></i>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- CDN JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Link fontawesome  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="dash.css" />
+</head>
+
+<body>
+  <header>
+    <img src="../assets/loopLog.png" alt="logo" class="logo" />
+    <span><img src="https://fontmeme.com/permalink/211222/69321bc7cbc662c7090b9a6a8c5fc4df.png" alt="style-script-font"
+        border="0"></span></span>
+
+  </header>
+
+  <main>
+    <div class="cards">
+
+      <div class="card-alone" id="vd">
+        <div class="text">
+          <i class="fas fa-calendar-day"></i>
+          <h3>Visitantes del día</h3>
+          <h1>21</h1>
         </div>
 
-        <div class="card-alone">
-          <div>
-            <h2>Visitantes esta semana</h2>
-            <small>214</small>
-          </div>
-          <div class="icon">
-            <i class="fas fa-calendar-week"></i>
-          </div>
-        </div>
+      </div>
 
-        <div class="card-alone">
-          <div>
-            <h2>Visitantes este mes</h2>
-            <small>877</small>
-          </div>
-          <div class="icon">
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-        </div>
-
-        <div class="card-alone">
-          <div>
-            <h2>Total de visitantes</h2>
-            <small>21</small>
-          </div>
-          <div id="icon">
-            <i class="fas fa-users"></i>
-          </div>
+      <div class="card-alone" id="vs">
+        <div class="text">
+          <i class="fas fa-calendar-week"></i>
+          <h3>Visitantes Semanales</h3>
+          <h1>21</h1>
         </div>
       </div>
 
-      <div class="lista">
-        <div class="ventes">
-          <div class="case">
-            <div class="header-case">
-              <h2>Nombres de usuarios recientes</h2>
-              <button class="button">plus</button>
-            </div>
-            <div class="body-case">
-              <div class="tabla">
-                <table width="100%">
-                  <thead>
-                    <tr>
-                      <td>Nombre</td>
-                      <td>Apellido</td>
-                      <td>E-mail</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td id="name">fer</td>
-                      <td id="lastName">fajardo</td>
-                      <td id="mail">correo</td>
-                    </tr>
+      <div class="card-alone" id="vm">
+        <div class="text">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Visitantes Mensuales</h3>
+          <h1>21</h1>
 
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="stock">
-          <div class="case">
-            <div class="header-case">
-              <h2>clientes</h2>
-            </div>
 
-            <div class="body-case">
-              <div class="all-users">
-                <div class="info">
-                  <img src="" width="30" height="30" alt="" />
-                  <div>
-                    <h4>Omar</h4>
-                    <small>ambulante</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="btn">Cerrar sesión</button>
-          </div>
         </div>
       </div>
-    </main>
+
+      <div class="card-alone" id="vt">
+        <div class="text">
+          <i class="fas fa-users"></i>
+          <h3>Visitantes Totales</h3>
+          <h1>21</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="lista">
+      <div class="ventes">
+        <div class="case">
+          <div class="header-case">
+            <center>
+            <h2 class="visitantes-T">Visitantes</h2>
+            </center>
+          </div>
+          <div class="body-case">
+            <div class="tabla">
+              <table width="100%">
+                <thead>
+                  <tr>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Celular</td>
+                    <td>E-mail</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="name">fer</td>
+                    <td id="lastName">fajardo</td>
+                    <td id="celular">55</td>
+                    <td id="mail">correo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <center><button class="btn1 fifth"></button></center>
+        
+
+        </div>
+        </div>
+      </div>
+     
+  </main>
+  <footer id="contact">
     <section id="social">
+
       Fernanda Fajardo
-      <a href="https://twitter.com/maferfajardo" target="_blank" class="btn"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/fernanda-fajardo-6a83b4216/"
-        target="_blank"
-        class="btn"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a href="https://github.com/FernandaFA02" target="_blank" class="btn"
-        ><i class="fab fa-github"></i
-      ></a>
+      <a href="https://twitter.com/maferfajardo" target="_blank" class="btn"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/fernanda-fajardo-6a83b4216/" target="_blank" class="btn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/FernandaFA02" target="_blank" class="btn"><i class="fab fa-github"></i></a>
 
       Amanda Ramírez
-      <a href="https://twitter.com/jeongaetze?s=09" target="_blank" class="btn"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/amanda-ramirez-864988218/"
-        target="_blank"
-        class="btn"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a href="https://github.com/getzemani18" target="_blank" class="btn"
-        ><i class="fab fa-github"></i
-      ></a>
+      <a href="https://twitter.com/jeongaetze?s=09" target="_blank" class="btn"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/amanda-ramirez-864988218/" target="_blank" class="btn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/getzemani18" target="_blank" class="btn"><i class="fab fa-github"></i></a>
 
       Mónica Macal
-      <a href="https://twitter.com/rebe_macal" target="_blank" class="btn"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/"
-        target="_blank"
-        class="btn"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a href="https://github.com/mon0macal7" target="_blank" class="btn"
-        ><i class="fab fa-github"></i
-      ></a>
-      <p><i class="far fa-copyright"></i> 2021 Ajusco Bootcamp</p>
+      <a href="https://twitter.com/rebe_macal" target="_blank" class="btn"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/" target="_blank" class="btn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/mon0macal7" target="_blank" class="btn"><i class="fab fa-github"></i></a>
     </section>
- 
-
-  </section>
+  </footer>
 
 
-  
-    <script src="administration.js" type="module"></script>
-  </body>
+
+
+
+  <script src="administration.js" type="module"></script>
+</body>
+
 </html>
