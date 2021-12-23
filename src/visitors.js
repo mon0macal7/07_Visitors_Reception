@@ -1,11 +1,53 @@
 // Import the functions you need from the SDKs you need
 
 const db = firebase.firestore();
+const prueba = { ciela: "vania" };
+db.collection("visitantes")
+  .doc()
+  .set(prueba)
+  .then(() => {
+    console.log("prueba");
+  });
+
+const registroVisitantes = document.getElementById("pantalla1-registro");
+registroVisitantes.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const nombre = registroVisitantes["#nombre"].value;
+  const apellido = registroVisitantes["#apellido"].value;
+  const correo = registroVisitantes["#mail"].value;
+  const empresa = registroVisitantes["#dropdown"].value;
+  const motivo = registroVisitantes["#dropdown1"].value;
+  const cita = registroVisitantes["#cita"].value;
+  const encargado = registroVisitantes["#encargado"].value;
+  const fotografía = registroVisitantes["#tomarFoto"].value;
+
+  const respuesta = await db.collection("registro").doc().set({
+    nombre,
+    apellido,
+    correo,
+    empresa,
+    motivo,
+    cita,
+    encargado,
+    fotografía,
+  });
+  console.log(respuesta);
+});
+
 //firebase.firestore();
 console.log(db);
-db.collection("perritos").doc().set({ name: "kale" });
+let formulario = {
+  nombre: document.getElementById("nombre").value,
+  apellido: document.getElementById("apellido").value,
+  correo: document.getElementById("mail").value,
+  empresa: document.getElementById("dropdown").value,
+  motivo: document.getElementById("dropdown1").value,
+  cita: document.getElementById("cita").value,
+  encargado: document.getElementById("encargado").value,
+};
 
-const registrar = "../data/loop.json";
+/*const registrar = "../data/loop.json";
 console.log(registrar);
 let arrayEmpresas = [];
 let arrayPersonal = [];
@@ -43,9 +85,9 @@ let selectEmpresa = (index) => {
     //console.log(empleados);
   }
 };
-traerData();
+traerData();*/
 
-const save = () => {
+/*const save = () => {
   let buttonKeep = document.getElementById("enviar");
   buttonKeep.addEventListener("click", async (e) => {
     e.preventDefault();
@@ -63,18 +105,10 @@ const save = () => {
   const entrada = (objeto) => {
     db.collection("perrito").doc(objeto).set();
   };
-*/
-  let formulario = {
-    nombre: document.getElementById("nombre").value,
-    apellido: document.getElementById("apellido").value,
-    correo: document.getElementById("mail").value,
-    empresa: document.getElementById("dropdown").value,
-    motivo: document.getElementById("dropdown1").value,
-    cita: document.getElementById("cita").value,
-    encargado: document.getElementById("encargado").value,
-  };
+
 };
 save();
+*/
 
 // guardar datos de  form en un objeto
 
