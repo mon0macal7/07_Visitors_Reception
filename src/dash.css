@@ -10,7 +10,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 0fr;
   grid-template-areas:
     "header"
     "main"
@@ -24,9 +24,7 @@ header {
 main {
   grid-area: main;
 }
-footer {
-  grid-area: footer;
-}
+
 
 header {
   padding: 1rem;
