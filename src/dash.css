@@ -1,6 +1,6 @@
 body {
   background-color: black;
-   background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "header"
     "main"
@@ -24,7 +24,6 @@ header {
 main {
   grid-area: main;
 }
-
 
 header {
   padding: 1rem;
@@ -44,12 +43,12 @@ header {
 }
 
 main {
-background: transparent;
-border-radius: 10%;
-padding: auto;
-margin: 0;
-margin-top: 0;
-margin-left: 0;
+  background: transparent;
+  border-radius: 10%;
+  padding: auto;
+  margin: 0;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 /*-------------------------->CARDS<--------------- */
@@ -58,7 +57,6 @@ margin-left: 0;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   margin-top: 1rem;
-  
 }
 .card-alone {
   display: flex;
@@ -68,41 +66,69 @@ margin-left: 0;
   box-shadow: 1px 1px 1px 1px rgba(3, 3, 3, 0.849);
 }
 
-#vd{
-background: #f12711;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#vd {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#vs{
-  background: #159957;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+#vs {
+  background: #cb2d3e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef473a,
+    #cb2d3e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ef473a,
+    #cb2d3e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#vm{
-  background: #1A2980;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+#vm {
+  background: #e52d27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b31217,
+    #e52d27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b31217,
+    #e52d27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#vt{
-  background: #2C3E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+#vt {
+  background: #333333; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dd1818,
+    #333333
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dd1818,
+    #333333
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .card-alone:hover {
   color: white;
 }
-.icon{
+.icon {
   text-align: center;
 }
-.text{
+.text {
   font-style: oblique;
   font-size: 15px;
   text-align: center;
 }
-
 
 /* -------------------------------------->TABLA<----------------------- */
 .lista {
@@ -112,17 +138,17 @@ background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, F
   padding: auto;
 }
 .case {
-  background:rgba(240, 236, 236, 0.801);
+  background: rgba(241, 238, 238, 0.979);
   border-radius: 10px;
 }
-.visitantes-T{
+.visitantes-T {
   font-size: 30px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .header-case,
 .body-case {
   padding: 0.5rem;
-  
 }
 .header-case {
   display: flex;
@@ -184,50 +210,46 @@ tr td:last-child {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-
 }
-  btn1:hover,
-  btn1:focus {
-    color: #fff;
-    outline: 0;
-  }
+btn1:hover,
+btn1:focus {
+  color: #fff;
+  outline: 0;
+}
 
 .fifth {
-  border-color: purple;
+  border-color: rgb(240, 10, 10);
   /* border: 0; */
   border-radius: 0;
-  color: purple;
+  color: rgb(173, 16, 16);
   position: relative;
   overflow: hidden;
   z-index: 1;
   transition: color 150ms ease-in-out;
 }
-  .fifth:after {
-    content: 'Salir';
-    position:absolute;
-    display: block;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 100%;
-    background: purple;
-    z-index: -1;
-    transition: width 150ms ease-in-out;
-  }
-  
-  .fifth:hover:after {
-    color: #fff;
-      width: 110%;
-    
-  }
+.fifth:after {
+  content: "Salir";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: rgb(92, 17, 17);
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+}
 
-
+.fifth:hover:after {
+  color: #fff;
+  width: 110%;
+}
 
 /* ------------------>FOOTER-------------------- */
- footer {
+footer {
   color: aliceblue;
   background-color: black;
   grid-area: footer;
