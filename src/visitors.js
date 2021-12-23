@@ -1,3 +1,10 @@
+// Import the functions you need from the SDKs you need
+
+const db = firebase.firestore();
+//firebase.firestore();
+console.log(db);
+db.collection("perritos").doc().set({ name: "kale" });
+
 const registrar = "../data/loop.json";
 console.log(registrar);
 let arrayEmpresas = [];
@@ -38,18 +45,39 @@ let selectEmpresa = (index) => {
 };
 traerData();
 
+const save = () => {
+  let buttonKeep = document.getElementById("enviar");
+  buttonKeep.addEventListener("click", async (e) => {
+    e.preventDefault();
+    await entrada(formulario);
+    console.log("clickenform");
+  });
+
+  //firebase keys
+
+  // Your web app's Firebase configuration
+
+  // Initialize Firebase
+
+  /* const db = firebase.firestore();
+  const entrada = (objeto) => {
+    db.collection("perrito").doc(objeto).set();
+  };
+*/
+  let formulario = {
+    nombre: document.getElementById("nombre").value,
+    apellido: document.getElementById("apellido").value,
+    correo: document.getElementById("mail").value,
+    empresa: document.getElementById("dropdown").value,
+    motivo: document.getElementById("dropdown1").value,
+    cita: document.getElementById("cita").value,
+    encargado: document.getElementById("encargado").value,
+  };
+};
+save();
+
 // guardar datos de  form en un objeto
 
-// let formulario = {
-//   nombre: document.getElementById("nombre").value,
-//   apellido: document.getElementById("apellido").value,
-//   correo: document.getElementById("mail").value,
-//   empresa: document.getElementById("dropdown").value,
-//   motivo: document.getElementById("dropdown1").value,
-//   cita: document.getElementById("cita").value,
-//   encargado: document.getElementById("encargado").value,
-// };
+//
 
 // console.log(formulario);
-
-

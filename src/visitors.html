@@ -8,8 +8,6 @@
   <title>Loop Work.Co</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="admin.html">
-  <link href="index.html">
   <link rel="stylesheet" href="visitors.css" />
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -56,21 +54,7 @@
             <div class="s"></div>
             <label for="dropdown" id="encargado">Persona que visita</label>
             <select id="dropdown2" class="empres-select">
-              <!-- <option value="Mariana Vallejo">Mariana Vallejo</option>
-              <option value="Minerva Santoro">Minerva Santoro</option>
-              <option value="Joaquin Segovia">Joaquin Segovia</option>
-              <option value="Martha Rivas">Martha Rivas</option>
-              <option value="Ernesto Fuentes">Ernesto Fuentes</option>
-              <option value="Álvaro Yañez">Álvaro Yañez</option>
-              <option value="José Váldez">José Váldez</option>
-              <option value="Héctor Velasco">Héctor Velasco</option>
-              <option value="Alfonso Figueroa">Alfonso Figueroa</option>
-              <option value="Mariana Vallejo">Mariana Vallejo</option>
-              <option value="Karina Miramontes">Karina Miramontes</option>
-              <option value="Efraín Soto">Efraín Soto</option>
-              <option value="Christian Herrera">Christian Herrera</option>
-              <option value="Cinthia Toledo">Cinthia Toledo</option>
-              <option value="Roxana Millán">Roxana Millán</option> -->
+              
             </select>
 
             <a href="index.html"><button type="button" id="regresarvisitors" class="next1"><i
@@ -97,38 +81,36 @@
     </div>
     <div class="botonFoto">
       <button id="tomarFoto">FOTO</button>
+      <button id="tomarFoto">Guardar</button>
     </div>
     <div class="canvas">
       <canvas id="canvas" height="450" width="600"></canvas>
     </div>
-    <button id="enviar">Guardar</button>
+   
 
   </section>
 
 
-<!-- SDK para inicializar firebase -->
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
+ 
+<!-- CDN para inicializar firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>  
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> 
+<script>
   const firebaseConfig = {
-    apiKey: "AIzaSyDBQknoRhW8FG_UMHOkSOY63pLTl2dF1mo",
-    authDomain: "registro-de-visitantes-628e5.firebaseapp.com",
-    projectId: "registro-de-visitantes-628e5",
-    storageBucket: "registro-de-visitantes-628e5.appspot.com",
-    messagingSenderId: "365504363374",
-    appId: "1:365504363374:web:d66d5fcd624fbc21259f7f"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig); 
+  apiKey: "AIzaSyDBQknoRhW8FG_UMHOkSOY63pLTl2dF1mo",
+  authDomain: "registro-de-visitantes-628e5.firebaseapp.com",
+  projectId: "registro-de-visitantes-628e5",
+  storageBucket: "registro-de-visitantes-628e5.appspot.com",
+  messagingSenderId: "365504363374",
+  appId: "1:365504363374:web:d66d5fcd624fbc21259f7f",
+};
+console.log(firebase)
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 </script>
 
-  
-  <script src="visitors.js" ></script>
+<script src="visitors.js"></script>
   <script src="camara.js"> </script>
 
   <!----------------------Liga para librería de JQuery--------------------------------  ------------------------------->
