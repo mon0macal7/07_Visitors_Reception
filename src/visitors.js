@@ -23,16 +23,19 @@ registroVisitantes.addEventListener("click", async (e) => {
     empresa: document.getElementById("dropdown").value,
     motivo: document.getElementById("dropdown1").value,
     cita: document.getElementById("cita").value,
-    encargado: document.getElementById("encargado").value,
+    encargado: document.getElementById("dropdown2").value,
+    foto: document.getElementById('tomarFoto').value
   };
-
-  await guardarObj(formulario);
+console.log(formulario);
+    await guardarObj(formulario);
 
 });
 
 const guardarObj = (formulario) =>{
-  db.collection("registro").doc().set(formulario);
+  alert('Hola')
   console.log(formulario);
+  db.collection("registro").doc().set(formulario);
+
 }
 
 //firebase.firestore();
