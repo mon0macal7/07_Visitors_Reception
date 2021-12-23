@@ -1,3 +1,10 @@
+// Import the functions you need from the SDKs you need
+
+const db = firebase.firestore();
+//firebase.firestore();
+console.log(db);
+db.collection("perritos").doc().set({ name: "kale" });
+
 const registrar = "../data/loop.json";
 console.log(registrar);
 let arrayEmpresas = [];
@@ -46,11 +53,17 @@ const save = () => {
     console.log("clickenform");
   });
 
-  const db = firebase.firestore();
-  const entrada = (objeto) => {
-    db.collection("registro").doc(objeto).set();
-  };
+  //firebase keys
 
+  // Your web app's Firebase configuration
+
+  // Initialize Firebase
+
+  /* const db = firebase.firestore();
+  const entrada = (objeto) => {
+    db.collection("perrito").doc(objeto).set();
+  };
+*/
   let formulario = {
     nombre: document.getElementById("nombre").value,
     apellido: document.getElementById("apellido").value,
