@@ -54,7 +54,7 @@
             <div class="s"></div>
             <label for="dropdown" id="encargado">Persona que visita</label>
             <select id="dropdown2" class="empres-select">
-              
+
             </select>
 
             <a href="index.html"><button type="button" id="regresarvisitors" class="next1"><i
@@ -81,36 +81,36 @@
     </div>
     <div class="botonFoto">
       <button id="tomarFoto">FOTO</button>
-      <button id="tomarFoto">Guardar</button>
+      <a href="index.html"> <button id="tomarFoto">Guardar</button></a>
     </div>
     <div class="canvas">
       <canvas id="canvas" height="450" width="600"></canvas>
     </div>
-   
+
 
   </section>
 
 
 
- 
-<!-- CDN para inicializar firebase -->
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>  
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> 
-<script>
-  const firebaseConfig = {
-  apiKey: "AIzaSyDBQknoRhW8FG_UMHOkSOY63pLTl2dF1mo",
-  authDomain: "registro-de-visitantes-628e5.firebaseapp.com",
-  projectId: "registro-de-visitantes-628e5",
-  storageBucket: "registro-de-visitantes-628e5.appspot.com",
-  messagingSenderId: "365504363374",
-  appId: "1:365504363374:web:d66d5fcd624fbc21259f7f",
-};
-console.log(firebase)
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-</script>
 
-<script src="visitors.js"></script>
+  <!-- CDN para inicializar firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDBQknoRhW8FG_UMHOkSOY63pLTl2dF1mo",
+      authDomain: "registro-de-visitantes-628e5.firebaseapp.com",
+      projectId: "registro-de-visitantes-628e5",
+      storageBucket: "registro-de-visitantes-628e5.appspot.com",
+      messagingSenderId: "365504363374",
+      appId: "1:365504363374:web:d66d5fcd624fbc21259f7f",
+    };
+    console.log(firebase)
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="visitors.js"></script>
   <script src="camara.js"> </script>
 
   <!----------------------Liga para librería de JQuery--------------------------------  ------------------------------->
