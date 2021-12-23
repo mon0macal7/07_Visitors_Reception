@@ -10,6 +10,8 @@ html {
 }
 #pantalla1-registro {
   font-family: "roboto", "sans-serif";
+  row-gap: 10px;
+  padding: 0 auto;
   width: 100%;
   height: 100vh;
 }
@@ -165,7 +167,7 @@ html {
   padding: 10px;
   text-align: center;
 }
-#tomarFoto {
+.tomarFoto {
   box-shadow: 1px 1px 1px 0px rgb(0, 0, 0);
   border-radius: 15%;
   background-color: orangered;
@@ -181,4 +183,10 @@ html {
   text-align: center;
   font-style: italic;
   color: white;
+}
+
+#tomarFoto2 {
+  box-shadow: 1px 1px 1px 0px rgb(0, 0, 0);
+  border-radius: 15%;
+  background-color: rgba(37, 196, 186, 0.682);
 }

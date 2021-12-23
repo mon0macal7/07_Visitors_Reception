@@ -1,4 +1,12 @@
 /* Pantalla 1-Inicio */
+html {
+  background: url(https://i.pinimg.com/564x/14/3c/c4/143cc440e4b1c4cd7deff3663a8b00f9.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* overflow: hidden; */
+}
 #pantalla-1-inicio {
   background: url(https://i.pinimg.com/564x/14/3c/c4/143cc440e4b1c4cd7deff3663a8b00f9.jpg);
   background-size: cover;
@@ -140,6 +148,3 @@ footer {
     height: 100vh;
   }
 }
-
-
-

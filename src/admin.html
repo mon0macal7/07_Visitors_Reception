@@ -9,9 +9,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link href="index.html">
-  <link href="visitors.html">
   <link rel="stylesheet" href="admin.css">
+
 </head>
 
 <body>
@@ -34,29 +33,17 @@
   </section>
 
   <section hidden id="pantalla2-visitantes">
-    <section2>
-      <h1>Tabla</h1>
-    </section2>
-    <section3>
-      <h1>Acordeon</h1>
-    </section3>
-  </section>
+    
   <section id="pantalla3-abandono">
 
   </section>
 
-  <script>
-    // -------------------Función para boton de registro--------------------------------//
-    const admin = document.getElementById('btn')
-    admin.addEventListener('click', () => {
-      document.getElementById('pantalla1-login').hidden = true;
-      document.getElementById('pantalla2-visitantes').hidden = false;
-    })
-  </script>
-  <script src="admin.js"></script>
-</body>
 
-<!-- <script src="app.js"></script> -->
+
+
+
+  <script src="app.js" type="module"></script>
+  <script src="admin.js"></script>
 </body>
 
 </html>
