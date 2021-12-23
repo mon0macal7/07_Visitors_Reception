@@ -1,14 +1,15 @@
 // Import the functions you need from the SDKs you need
 
 const db = firebase.firestore();
-const prueba = { ciela: "vania" };
+const tabla = document.getElementById('tabla')
+// const prueba = { ciela: "vania" };
 
-db.collection("visitantes")
-  .doc()
-  .set(prueba)
-  .then(() => {
-    console.log("prueba");
-  });
+// db.collection("visitantes")
+//   .doc()
+//   .set(prueba)
+//   .then(() => {
+//     console.log("prueba");
+//   });
 
 
 
@@ -35,6 +36,35 @@ const guardarObj = (formulario) =>{
   console.log(formulario);
   db.collection("registro").doc().set(formulario);
 
+  tabla.innerHTML += `      <div class="ventes">
+  <div class="case">
+    <div class="header-case">
+      <center>
+        <h2 class="visitantes-T">Visitantes</h2>
+      </center>
+    </div>
+    <div class="body-case">
+      <div class="tabla">
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>E-mail</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="name">${registro.nombre}</td>
+              <td id="lastName">${registro.apellido}</td>
+              <td id="mail">${registro.mail}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>`
 }
 
 //firebase.firestore();
