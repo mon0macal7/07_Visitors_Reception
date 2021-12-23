@@ -44,24 +44,14 @@
             </select>
             <div class="s"></div>
 
-<<<<<<< HEAD
-            
+
             <label>¿Cuenta con cita?</label>
             <select id="cita" class="empres-select">
               <option value="si">Si</option>
               <option value="no">No</option>
             </select>
-            
 
-=======
-            <section id="cita"> 
-            <label >¿Cuenta con cita?</label>
-            <input type="checkbox" class="empres-select">
-            <label for="Si">Si</label>
-            <input type="checkbox" class="empres-select">
-            <label for="No">No</label>
-          </section>
->>>>>>> 1fb32b3f26fe84bde65978403ba1a633faeb3d5c
+
             <br>
             <div class="s"></div>
             <label for="dropdown" id="encargado">Persona que visita</label>
@@ -92,8 +82,8 @@
       <video id="video" autoplay="true"></video>
     </div>
     <div class="botonFoto">
-      <button id="tomarFoto" class="tomarFoto >FOTO</button>
-      <a href="index.html"> <button id="enviar" class="tomarFoto">Guardar</button></a>
+      <button id="tomarFoto" class="tomarFoto">FOTO</button>
+      <a href="index.html"> <button id="tomarFoto" class="tomarFoto">Guardar</button></a>
     </div>
     <div class="canvas">
       <canvas id="canvas" height="450" width="600"></canvas>
@@ -104,26 +94,26 @@
 
 
 
- 
-<!-- CDN para inicializar firebase -->
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>  
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> 
-<script>
-  const firebaseConfig = {
-  apiKey: "AIzaSyDBQknoRhW8FG_UMHOkSOY63pLTl2dF1mo",
-  authDomain: "registro-de-visitantes-628e5.firebaseapp.com",
-  projectId: "registro-de-visitantes-628e5",
-  storageBucket: "registro-de-visitantes-628e5.appspot.com",
-  messagingSenderId: "365504363374",
-  appId: "1:365504363374:web:d66d5fcd624fbc21259f7f",
-};
-console.log(firebase)
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-</script>
 
-<script src="visitors.js"></script>
-<script src="admin.js"></script>
+  <!-- CDN para inicializar firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDBQknoRhW8FG_UMHOkSOY63pLTl2dF1mo",
+      authDomain: "registro-de-visitantes-628e5.firebaseapp.com",
+      projectId: "registro-de-visitantes-628e5",
+      storageBucket: "registro-de-visitantes-628e5.appspot.com",
+      messagingSenderId: "365504363374",
+      appId: "1:365504363374:web:d66d5fcd624fbc21259f7f",
+    };
+    console.log(firebase)
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="visitors.js"></script>
+  <script src="admin.js"></script>
   <script src="camara.js"> </script>
 
   <!----------------------Liga para librería de JQuery--------------------------------  ------------------------------->
