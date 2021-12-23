@@ -2,6 +2,7 @@
 
 const db = firebase.firestore();
 const prueba = { ciela: "vania" };
+
 db.collection("visitantes")
   .doc()
   .set(prueba)
@@ -9,43 +10,34 @@ db.collection("visitantes")
     console.log("prueba");
   });
 
-const registroVisitantes = document.getElementById("pantalla1-registro");
-registroVisitantes.addEventListener("submit", async (e) => {
+
+
+const registroVisitantes = document.getElementById("enviar");
+registroVisitantes.addEventListener("click", async (e) => {
   e.preventDefault();
+  
+  let formulario = {
+    nombre: document.getElementById("nombre").value,
+    apellido: document.getElementById("apellido").value,
+    correo: document.getElementById("mail").value,
+    empresa: document.getElementById("dropdown").value,
+    motivo: document.getElementById("dropdown1").value,
+    cita: document.getElementById("cita").value,
+    encargado: document.getElementById("encargado").value,
+  };
 
-  const nombre = registroVisitantes["#nombre"].value;
-  const apellido = registroVisitantes["#apellido"].value;
-  const correo = registroVisitantes["#mail"].value;
-  const empresa = registroVisitantes["#dropdown"].value;
-  const motivo = registroVisitantes["#dropdown1"].value;
-  const cita = registroVisitantes["#cita"].value;
-  const encargado = registroVisitantes["#encargado"].value;
-  const fotografía = registroVisitantes["#tomarFoto"].value;
+  await guardarObj(formulario);
 
-  const respuesta = await db.collection("registro").doc().set({
-    nombre,
-    apellido,
-    correo,
-    empresa,
-    motivo,
-    cita,
-    encargado,
-    fotografía,
-  });
-  console.log(respuesta);
 });
+
+const guardarObj = (formulario) =>{
+  db.collection("registro").doc().set(formulario);
+  console.log(formulario);
+}
 
 //firebase.firestore();
 console.log(db);
-let formulario = {
-  nombre: document.getElementById("nombre").value,
-  apellido: document.getElementById("apellido").value,
-  correo: document.getElementById("mail").value,
-  empresa: document.getElementById("dropdown").value,
-  motivo: document.getElementById("dropdown1").value,
-  cita: document.getElementById("cita").value,
-  encargado: document.getElementById("encargado").value,
-};
+
 
 /*const registrar = "../data/loop.json";
 console.log(registrar);
