@@ -32,7 +32,6 @@ console.log(formulario);
 });
 
 const guardarObj = (formulario) =>{
-  alert('Hola')
   console.log(formulario);
   db.collection("registro").doc().set(formulario);
 
