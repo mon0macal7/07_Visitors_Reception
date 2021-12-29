@@ -1,4 +1,4 @@
-const registro = document.getElementById("btn-siguiente");
+const registro = document.getElementById("btn-siguiente"); // Implementando screen cámara
 registro.addEventListener("click", () => {
   document.getElementById("pantalla1-registro").hidden = true;
   document.getElementById("pantalla2-foto").hidden = false;
@@ -15,7 +15,7 @@ registro.addEventListener("click", () => {
   document.getElementById("tomarFoto").addEventListener("click", () => {
     tomarFoto();
   });
-
+  // Funcion para pintar imagen en canvas
   function tomarFoto() {
     const canvas = document.getElementById("canvas");
     let ctx = canvas.getContext("2d");
@@ -26,6 +26,7 @@ const canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 let video = document.getElementById("video");
 
+// Guardar imagen en base 64
 document.getElementById("tomarFoto").addEventListener("click", () => {
   function getBase64Img(video) {
     let canvas = document.createElement("canvas");
@@ -38,11 +39,11 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
   console.log(keepImg);
 });
 
-//arreglos para añadir los registros
+//Arreglos para añadir los registros
 let traerData = [];
 let arrayVisitantes = [];
 
-// Se enciende la coneccion con firestore
+// Se enciende la conexión con firestore
 const db = firebase.firestore();
 // // Aqui empieza la tabla
 // const table = document.getElementById('tabla')
@@ -64,22 +65,23 @@ const db = firebase.firestore();
 //     </tr>`
 //   })
 
-const onGetData = (callback) => db.collection('regVisitantes').onSnapshot(callback)
+const onGetData = (callback) =>
+  db.collection("regVisitantes").onSnapshot(callback);
 
 export async function pintarDatos() {
   onGetData((querySnapshot) => {
     querySnapshot.forEach((doc) => {
-      let visit = doc.data()
-      visit.id = doc.id
+      let visit = doc.data();
+      visit.id = doc.id;
       console.log(visit);
-      traerData.push(visit)
-    })
+      traerData.push(visit);
+    });
 
-// Se le pasan los datos de firebase a la variable arrayVisiantes
-  arrayVisitantes = traerData
-  console.log(arrayVisitantes);
-  pintarRegistro();
-  })
+    // Se le pasan los datos de firebase a la variable arrayVisiantes
+    arrayVisitantes = traerData;
+    console.log(arrayVisitantes);
+    pintarRegistro();
+  });
 }
 
 // Se crea la funcion que servirá para pintar a los vistantes dentro de la tabla
@@ -89,9 +91,9 @@ let pintarRegistro = () => {
   let tabla = arrayVisitantes[0];
   console.log(tabla.nombre);
 
-// Se hace una iteracion con for of
-for (const tabla of arrayVisitantes) {
-  document.getElementById('tabla').innerHTML += `
+  // Se hace una iteracion con for of
+  for (const tabla of arrayVisitantes) {
+    document.getElementById("tabla").innerHTML += `
   <tr>
         <td>${tabla.nombre}</td>
           <td>${tabla.apellido}</td>
@@ -101,9 +103,9 @@ for (const tabla of arrayVisitantes) {
           <td>${tabla.cita}</td>
           <td>${tabla.encargado}</td>
         </tr>
-  `
-}
-}
+  `;
+  }
+};
 
 // const prueba = { ciela: "vania" };
 
@@ -136,7 +138,7 @@ const guardarObj = (formulario) => {
   console.log(formulario);
   db.collection("registro").doc().set(formulario);
 
-  window.location.href = "./index.html"
+  window.location.href = "./index.html";
 };
 
 //firebase.firestore();

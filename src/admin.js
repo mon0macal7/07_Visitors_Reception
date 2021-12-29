@@ -1,4 +1,4 @@
-const registrar = "../data/loop.json";
+const registrar = "../data/loop.json"; // Fetch para traer json local
 console.log(registrar);
 let arrayEmpresas = [];
 let arrayPersonal = [];
@@ -13,7 +13,7 @@ const traerData = () => {
     });
 };
 
-// iterar empresas
+// iterar empresas de manera dinámica
 const iterarEmpresas = (arraydeEmpresas) => {
   for (const [index, empresa] of arraydeEmpresas.entries()) {
     //console.log(empresa);
@@ -25,6 +25,7 @@ const iterarEmpresas = (arraydeEmpresas) => {
     //console.log(empresas);
   }
 };
+//Iterar personal al seleccionar empresa
 let selectEmpresa = (index) => {
   console.log(arrayEmpresas[0].LoopBuilding[index].Personal);
   let empleados = document.getElementById("dropdown2");
