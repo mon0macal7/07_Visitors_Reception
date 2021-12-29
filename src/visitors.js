@@ -44,6 +44,25 @@ let arrayVisitantes = [];
 
 // Se enciende la coneccion con firestore
 const db = firebase.firestore();
+// // Aqui empieza la tabla
+// const table = document.getElementById('tabla')
+
+// window.addEventListener('DOMContentLoaded', async (e) =>{
+//   await guardarObj.on('value', (registros) => {
+//   document.getElementById('tabla').innerHTML += ''
+//   registros.forEach((registro1) => {
+//     let reistroData = registro1.val()
+//     document.getElementById('tabla').innerHTML += `
+//     <tr>
+//       <td>${reistroData.nombre}</td>
+//       <td>${reistroData.apellido}</td>
+//       <td>${reistroData.correo}</td>
+//       <td>${reistroData.empresa}</td>
+//       <td>${reistroData.motivo}</td>
+//       <td>${reistroData.cita}</td>
+//       <td>${reistroData.encargado}</td>
+//     </tr>`
+//   })
 
 const onGetData = (callback) => db.collection('regVisitantes').onSnapshot(callback)
 
