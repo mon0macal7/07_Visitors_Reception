@@ -43,11 +43,11 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
 const table = document.getElementById('tabla')
 
 window.addEventListener('DOMContentLoaded', async (e) =>{
-  await guardarObj.on('value', (registro) => {
-  table.innerHTML = ''
-  registro.forEach((registro) => {
+  await guardarObj.on('value', (registros) => {
+  document.getElementById('tabla').innerHTML = ''
+  registros.forEach((registro) => {
     let reistroData = registro.val()
-    table.innerHTML = `<tbody>
+    document.getElementById('tabla').innerHTML += `
     <tr>
       <td>${reistroData.nombre}</td>
       <td>${reistroData.apellido}</td>
