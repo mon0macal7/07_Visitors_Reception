@@ -38,34 +38,54 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
   console.log(keepImg);
 });
 
+//arreglos para añadir los registros
+let traerData = [];
+let arrayVisitantes = [];
 
-// Aqui empieza la tabla
-const table = document.getElementById('tabla')
-
-window.addEventListener('DOMContentLoaded', async (e) =>{
-  await guardarObj.on('value', (registros) => {
-  document.getElementById('tabla').innerHTML = ''
-  registros.forEach((registro) => {
-    let reistroData = registro.val()
-    document.getElementById('tabla').innerHTML += `
-    <tr>
-      <td>${reistroData.nombre}</td>
-      <td>${reistroData.apellido}</td>
-      <td>${reistroData.correo}</td>
-      <td>${reistroData.empresa}</td>
-      <td>${reistroData.motivo}</td>
-      <td>${reistroData.cita}</td>
-      <td>${reistroData.encargado}</td>
-    </tr>`
-  })
-
-  })
-})
-
-
-
-// Import the functions you need from the SDKs you need
+// Se enciende la coneccion con firestore
 const db = firebase.firestore();
+
+const onGetData = (callback) => db.collection('regVisitantes').onSnapshot(callback)
+
+export async function pintarDatos() {
+  onGetData((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      let visit = doc.data()
+      visit.id = doc.id
+      console.log(visit);
+      traerData.push(visit)
+    })
+
+// Se le pasan los datos de firebase a la variable arrayVisiantes
+  arrayVisitantes = traerData
+  console.log(arrayVisitantes);
+  pintarRegistro();
+  })
+}
+
+// Se crea la funcion que servirá para pintar a los vistantes dentro de la tabla
+
+let pintarRegistro = () => {
+  console.log(arrayVisitantes.length);
+  let tabla = arrayVisitantes[0];
+  console.log(tabla.nombre);
+
+// Se hace una iteracion con for of
+for (const tabla of arrayVisitantes) {
+  document.getElementById('tabla').innerHTML += `
+  <tr>
+        <td>${tabla.nombre}</td>
+          <td>${tabla.apellido}</td>
+          <td>${tabla.correo}</td>
+          <td>${tabla.empresa}</td>
+          <td>${tabla.motivo}</td>
+          <td>${tabla.cita}</td>
+          <td>${tabla.encargado}</td>
+        </tr>
+  `
+}
+}
+
 // const prueba = { ciela: "vania" };
 
 // db.collection("visitantes")
@@ -96,6 +116,8 @@ registroVisitantes.addEventListener("click", async (e) => {
 const guardarObj = (formulario) => {
   console.log(formulario);
   db.collection("registro").doc().set(formulario);
+
+  window.location.href = "./index.html"
 };
 
 //firebase.firestore();
