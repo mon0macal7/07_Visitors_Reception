@@ -44,9 +44,9 @@ const table = document.getElementById('tabla')
 
 window.addEventListener('DOMContentLoaded', async (e) =>{
   await guardarObj.on('value', (registros) => {
-  document.getElementById('tabla').innerHTML = ''
-  registros.forEach((registro) => {
-    let reistroData = registro.val()
+  document.getElementById('tabla').innerHTML += ''
+  registros.forEach((registro1) => {
+    let reistroData = registro1.val()
     document.getElementById('tabla').innerHTML += `
     <tr>
       <td>${reistroData.nombre}</td>
