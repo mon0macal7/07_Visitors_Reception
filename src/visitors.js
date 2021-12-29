@@ -37,6 +37,33 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
   let keepImg = getBase64Img(document.getElementById("video"));
   console.log(keepImg);
 });
+
+
+// Aqui empieza la tabla
+const table = document.getElementById('tabla')
+
+window.addEventListener('DOMContentLoaded', async (e) =>{
+  await guardarObj.on('value', (registro) => {
+  table.innerHTML = ''
+  registro.forEach((registro) => {
+    let reistroData = registro.val()
+    table.innerHTML = `<tbody>
+    <tr>
+      <td>${reistroData.nombre}</td>
+      <td>${reistroData.apellido}</td>
+      <td>${reistroData.correo}</td>
+      <td>${reistroData.empresa}</td>
+      <td>${reistroData.motivo}</td>
+      <td>${reistroData.cita}</td>
+      <td>${reistroData.encargado}</td>
+    </tr>`
+  })
+
+  })
+})
+
+
+
 // Import the functions you need from the SDKs you need
 const db = firebase.firestore();
 // const prueba = { ciela: "vania" };
