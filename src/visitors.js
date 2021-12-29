@@ -1,5 +1,43 @@
-// Import the functions you need from the SDKs you need
+const registro = document.getElementById("btn-siguiente");
+registro.addEventListener("click", () => {
+  document.getElementById("pantalla1-registro").hidden = true;
+  document.getElementById("pantalla2-foto").hidden = false;
+  const video = document.getElementById("video");
+  navigator.mediaDevices
+    .getUserMedia({ video: true })
+    .then((stream) => {
+      video.srcObject = stream;
+      console.log(stream);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  document.getElementById("tomarFoto").addEventListener("click", () => {
+    tomarFoto();
+  });
 
+  function tomarFoto() {
+    const canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+    ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+  }
+});
+const canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+let video = document.getElementById("video");
+
+document.getElementById("tomarFoto").addEventListener("click", () => {
+  function getBase64Img(video) {
+    let canvas = document.createElement("canvas");
+    let ctx = canvas.getContext("2d");
+    ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+    let dataURL = canvas.toDataURL();
+    return dataURL;
+  }
+  let keepImg = getBase64Img(document.getElementById("video"));
+  console.log(keepImg);
+});
+// Import the functions you need from the SDKs you need
 const db = firebase.firestore();
 // const prueba = { ciela: "vania" };
 
@@ -10,12 +48,10 @@ const db = firebase.firestore();
 //     console.log("prueba");
 //   });
 
-
-
 const registroVisitantes = document.getElementById("enviar");
 registroVisitantes.addEventListener("click", async (e) => {
   e.preventDefault();
-  
+
   let formulario = {
     nombre: document.getElementById("nombre").value,
     apellido: document.getElementById("apellido").value,
@@ -24,22 +60,19 @@ registroVisitantes.addEventListener("click", async (e) => {
     motivo: document.getElementById("dropdown1").value,
     cita: document.getElementById("cita").value,
     encargado: document.getElementById("dropdown2").value,
-    foto: document.getElementById('tomarFoto').value
+    foto: document.getElementById("tomarFoto").value,
   };
-console.log(formulario);
-    await guardarObj(formulario);
-
+  console.log(formulario);
+  await guardarObj(formulario);
 });
 
-const guardarObj = (formulario) =>{
+const guardarObj = (formulario) => {
   console.log(formulario);
   db.collection("registro").doc().set(formulario);
-
-}
+};
 
 //firebase.firestore();
 console.log(db);
-
 
 /*const registrar = "../data/loop.json";
 console.log(registrar);

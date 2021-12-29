@@ -1,4 +1,4 @@
-const registro = document.getElementById("btn-siguiente");
+/*const registro = document.getElementById("btn-siguiente");
 registro.addEventListener("click", () => {
   document.getElementById("pantalla1-registro").hidden = true;
   document.getElementById("pantalla2-foto").hidden = false;
@@ -37,3 +37,4 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
   let keepImg = getBase64Img(document.getElementById("video"));
   console.log(keepImg);
 });
+*/
