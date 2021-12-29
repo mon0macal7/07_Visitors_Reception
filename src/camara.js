@@ -13,24 +13,27 @@ registro.addEventListener("click", () => {
       console.log(error);
     });
   document.getElementById("tomarFoto").addEventListener("click", () => {
-    getImg();
+    tomarFoto();
   });
 
-  function getImg(video) {
+  function tomarFoto() {
     const canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+    ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+  }
+});
+const canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+let video = document.getElementById("video");
+
+document.getElementById("tomarFoto").addEventListener("click", () => {
+  function getBase64Img(video) {
+    let canvas = document.createElement("canvas");
     let ctx = canvas.getContext("2d");
     ctx.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
     let dataURL = canvas.toDataURL();
     return dataURL;
   }
-  let base64 = getImg(document.getElementById("video"));
-  console.log(base64);
-  formulario.foto = base64;
-  formulario.date = ctx.drawImage(
-    video,
-    0,
-    0,
-    video.videoWidth,
-    video.videoHeight
-  );
+  let keepImg = getBase64Img(document.getElementById("video"));
+  console.log(keepImg);
 });
