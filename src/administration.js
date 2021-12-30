@@ -3,10 +3,10 @@ const db = firebase.firestore();
 console.log(db);
 //Listar datos
 db.collection("registro").onSnapshot((querySnapshot) => {
-  tabla.innerHTML = '';
+  tabla.innerHTML = "";
   querySnapshot.forEach((doc) => {
-      console.log(`${doc.id} => ${doc.data()}`);
-      tabla.innerHTML += `
+    console.log(`${doc.id} => ${doc.data()}`);
+    tabla.innerHTML += `
       <tr>
       <td>${doc.data().nombre}</td>
       <td>${doc.data().apellido}</td>
@@ -15,6 +15,8 @@ db.collection("registro").onSnapshot((querySnapshot) => {
       <td>${doc.data().motivo}</td>
       <td>${doc.data().cita}</td>
       <td>${doc.data().encargado}</td>
-    </tr>`
+
+    </tr>`;
   });
 });
+// <td>${doc.data().fecha.toDate()}</td>

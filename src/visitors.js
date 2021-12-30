@@ -43,6 +43,8 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
 
 const db = firebase.firestore();
 
+let fecha = new Date();
+
 const registroVisitantes = document.getElementById("enviar");
 registroVisitantes.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -55,6 +57,7 @@ registroVisitantes.addEventListener("click", async (e) => {
     motivo: document.getElementById("dropdown1").value,
     cita: document.getElementById("cita").value,
     encargado: document.getElementById("dropdown2").value,
+    date: fecha,
     foto: keepImg,
   };
   console.log(formulario);
