@@ -1,50 +1,48 @@
-/*const onGetData = (callback) =>
-  db.collection("regVisitantes").onSnapshot(callback);
 
-export async function pintarDatos() {
-  onGetData((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-      let visit = doc.data();
-      visit.id = doc.id;
-      console.log(visit);
-      traerData.push(visit);
-    });
+// Se enciende la conexión con firestore
+const db = firebase.firestore();
+console.log(db);
+//Listar datos
+db.collection("registro").onSnapshot((querySnapshot) => {
+  tabla.innerHTML = '';
+  querySnapshot.forEach((doc) => {
+      console.log(`${doc.id} => ${doc.data()}`);
+      tabla.innerHTML += `
+      <tr>
+      <td>${doc.data().nombre}</td>
+      <td>${doc.data().apellido}</td>
+      <td>${doc.data().correo}</td>
+      <td>${doc.data().empresa}</td>
+      <td>${doc.data().motivo}</td>
+      <td>${doc.data().cita}</td>
+      <td>${doc.data().encargado}</td>
 
-    // Se le pasan los datos de firebase a la variable arrayVisiantes
-    arrayVisitantes = traerData;
-    console.log(arrayVisitantes);
-    pintarRegistro();
+      <td>${doc.data().date.toDate().toDateString()}</td>
+    </tr>
+     <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${doc.id}">
+ <i class="bi bi-image-fill"></i>
+</button></td>
+    </tr>
+    <div class="modal fade" id="${doc.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Foto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-dialog modal-fullscreen-sm-down">
+  <img  src="${doc.data().foto}">
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>`
+      
+    
   });
-}
+});
 
-// Se crea la funcion que servirá para pintar a los vistantes dentro de la tabla
-
-let pintarRegistro = () => {
-  console.log(arrayVisitantes.length);
-  let tabla = arrayVisitantes[0];
-  console.log(tabla.nombre);
-
-  // Se hace una iteracion con for of
-  for (const tabla of arrayVisitantes) {
-    document.getElementById("tabla").innerHTML += `
-  <tr>
-        <td>${tabla.nombre}</td>
-          <td>${tabla.apellido}</td>
-          <td>${tabla.correo}</td>
-          <td>${tabla.empresa}</td>
-          <td>${tabla.motivo}</td>
-          <td>${tabla.cita}</td>
-          <td>${tabla.encargado}</td>
-        </tr>
-  `;
-  }
-};
-*/
-// const prueba = { ciela: "vania" };
-
-// db.collection("visitantes")
-//   .doc()
-//   .set(prueba)
-//   .then(() => {
-//     console.log("prueba");
-//   });

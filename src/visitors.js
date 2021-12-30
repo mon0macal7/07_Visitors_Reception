@@ -1,3 +1,5 @@
+let keepImg = "";
+
 const registro = document.getElementById("btn-siguiente"); // Implementando screen cámara
 registro.addEventListener("click", () => {
   document.getElementById("pantalla1-registro").hidden = true;
@@ -35,40 +37,13 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
     let dataURL = canvas.toDataURL();
     return dataURL;
   }
-  let keepImg = getBase64Img(document.getElementById("video"));
+  keepImg = getBase64Img(document.getElementById("video"));
   console.log(keepImg);
 });
 
-// Se enciende la conexión con firestore
 const db = firebase.firestore();
-// // Aqui empieza la tabla
-// const table = document.getElementById('tabla')
 
-// window.addEventListener('DOMContentLoaded', async (e) =>{
-//   await guardarObj.on('value', (registros) => {
-//   document.getElementById('tabla').innerHTML += ''
-//   registros.forEach((registro1) => {
-//     let reistroData = registro1.val()
-//     document.getElementById('tabla').innerHTML += `
-//     <tr>
-//       <td>${reistroData.nombre}</td>
-//       <td>${reistroData.apellido}</td>
-//       <td>${reistroData.correo}</td>
-//       <td>${reistroData.empresa}</td>
-//       <td>${reistroData.motivo}</td>
-//       <td>${reistroData.cita}</td>
-//       <td>${reistroData.encargado}</td>
-//     </tr>`
-//   })
-
-// const prueba = { ciela: "vania" };
-
-// db.collection("visitantes")
-//   .doc()
-//   .set(prueba)
-//   .then(() => {
-//     console.log("prueba");
-//   });
+let fecha = new Date()
 
 const registroVisitantes = document.getElementById("enviar");
 registroVisitantes.addEventListener("click", async (e) => {
@@ -82,46 +57,21 @@ registroVisitantes.addEventListener("click", async (e) => {
     motivo: document.getElementById("dropdown1").value,
     cita: document.getElementById("cita").value,
     encargado: document.getElementById("dropdown2").value,
+    date: fecha,
+    foto:  keepImg
   };
   console.log(formulario);
   await guardarObj(formulario); //este await no funciona
+  setTimeout (()=>{
+    alert('Tu registro fue exitoso!')
+    window.location.href = "./index.html"
+  }, 1500) 
 });
 
 const guardarObj = (formulario) => {
   console.log(formulario);
   db.collection("registro").doc().set(formulario);
-
-  // window.location.href = "./index.html";
 };
 
 //firebase.firestore();
-console.log(db);
 
-/*const save = () => {
-  let buttonKeep = document.getElementById("enviar");
-  buttonKeep.addEventListener("click", async (e) => {
-    e.preventDefault();
-    await entrada(formulario);
-    console.log("clickenform");
-  });
-
-  //firebase keys
-
-  // Your web app's Firebase configuration
-
-  // Initialize Firebase
-
-  /* const db = firebase.firestore();
-  const entrada = (objeto) => {
-    db.collection("perrito").doc(objeto).set();
-  };
-
-};
-save();
-*/
-
-// guardar datos de  form en un objeto
-
-//
-
-// console.log(formulario);

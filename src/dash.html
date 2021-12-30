@@ -18,6 +18,7 @@
     crossorigin="anonymous"></script>
   <!-- Link fontawesome  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="dash.css" />
 </head>
 
@@ -88,7 +89,8 @@
                     <td>Empresa</td>
                     <td>Motivo</td>
                     <td>Cita</td>
-                    <td>Persona</td>
+                    <td>Encargado</td>
+                    <td>Fecha</td>
                   </tr>
                 </thead>
                 <tbody id="tabla">
@@ -127,8 +129,24 @@
     </footer>
   </main>
 
+  <!-- CDN para inicializar firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDBQknoRhW8FG_UMHOkSOY63pLTl2dF1mo",
+      authDomain: "registro-de-visitantes-628e5.firebaseapp.com",
+      projectId: "registro-de-visitantes-628e5",
+      storageBucket: "registro-de-visitantes-628e5.appspot.com",
+      messagingSenderId: "365504363374",
+      appId: "1:365504363374:web:d66d5fcd624fbc21259f7f",
+    };
+    console.log(firebase)
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
-  <script src="visitors.js"></script>
+  <script src="administration.js"></script>
 </body>
 
 </html>
