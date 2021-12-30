@@ -41,8 +41,9 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
 
 // Se enciende la conexión con firestore
 const db = firebase.firestore();
+
 // // Aqui empieza la tabla
-const table = document.getElementById("tabla");
+/*const table = document.getElementById("tabla");
 window.addEventListener('DOMContentLoaded', async (e) => {
 
   await guardarObj.on("value", (registros) => {
@@ -72,7 +73,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 //   .set(prueba)
 //   .then(() => {
 //     console.log("prueba");
-//   });
+//   });*/
 
 const registroVisitantes = document.getElementById("enviar");
 registroVisitantes.addEventListener("click", async (e) => {
