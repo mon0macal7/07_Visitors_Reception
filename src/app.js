@@ -1,5 +1,4 @@
-import {pintarDatos} from "./visitors.js"
-pintarDatos();
+
 
 
 //-------------------Se atraen las pantallas---------------------------------------//
