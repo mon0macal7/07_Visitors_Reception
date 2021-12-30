@@ -39,11 +39,12 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
   }
   keepImg = getBase64Img(document.getElementById("video"));
   console.log(keepImg);
+  ctx.drawImage(video, 0, 0, 300, 225);
 });
 
 const db = firebase.firestore();
 
-let fecha = new Date()
+let fecha = new Date();
 
 const registroVisitantes = document.getElementById("enviar");
 registroVisitantes.addEventListener("click", async (e) => {
@@ -58,14 +59,14 @@ registroVisitantes.addEventListener("click", async (e) => {
     cita: document.getElementById("cita").value,
     encargado: document.getElementById("dropdown2").value,
     date: fecha,
-    foto:  keepImg
+    foto: keepImg,
   };
   console.log(formulario);
   await guardarObj(formulario); //este await no funciona
-  setTimeout (()=>{
-    alert('Tu registro fue exitoso!')
-    window.location.href = "./index.html"
-  }, 1500) 
+  setTimeout(() => {
+    alert("Tu registro fue exitoso!");
+    window.location.href = "./index.html";
+  }, 1500);
 });
 
 const guardarObj = (formulario) => {
@@ -74,4 +75,3 @@ const guardarObj = (formulario) => {
 };
 
 //firebase.firestore();
-
