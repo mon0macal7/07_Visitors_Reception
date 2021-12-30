@@ -65,7 +65,7 @@ registroVisitantes.addEventListener("click", async (e) => {
   setTimeout (()=>{
     alert('Tu registro fue exitoso!')
     window.location.href = "./index.html"
-  }, 1000) 
+  }, 1500) 
 });
 
 const guardarObj = (formulario) => {
