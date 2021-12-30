@@ -15,8 +15,8 @@ db.collection("registro").onSnapshot((querySnapshot) => {
       <td>${doc.data().motivo}</td>
       <td>${doc.data().cita}</td>
       <td>${doc.data().encargado}</td>
-
+      <td>${doc.data().date.toDate().toLocaleTimeString().toDateString()}</td>
     </tr>`
   });
 });
-      // <td>${doc.data().fecha.toDate()}</td>
+
