@@ -15,20 +15,20 @@ db.collection("registro").onSnapshot((querySnapshot) => {
       <td>${doc.data().motivo}</td>
       <td>${doc.data().cita}</td>
       <td>${doc.data().encargado}</td>
-      <td>${doc.data().date.toDate().toLocaleTimeString().toDateString()}</td>
+     <td>l</td>
      <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
  <i class="bi bi-image-fill"></i>
 </button></td>
     </tr>
-    <div class="modal" tabindex="-1">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        ${doc.data().foto}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
