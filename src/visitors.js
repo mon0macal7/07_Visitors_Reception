@@ -39,60 +39,7 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
   console.log(keepImg);
 });
 
-// Se enciende la conexión con firestore
 const db = firebase.firestore();
-
-//Listar datos
-// db.collection("registro").onSnapshot((querySnapshot) => {
-//   tabla.innerHTML = '';
-//   querySnapshot.forEach((doc) => {
-//       console.log(`${doc.id} => ${doc.data().descripcion}`);
-//       tabla.innerHTML += `
-//       <tr>
-//       <td>${doc.data().nombre}</td>
-//       <td>${doc.data().apellido}</td>
-//       <td>${doc.data().correo}</td>
-//       <td>${doc.data().empresa}</td>
-//       <td>${doc.data().motivo}</td>
-//       <td>${doc.data().cita}</td>
-//       <td>${doc.data().encargado}</td>
-//     </tr>`
-//   });
-// });
-
-
-// // // Aqui empieza la tabla
-// const table = document.getElementById("tabla");
-// window.addEventListener('DOMContentLoaded', async (e) => {
-
-//   await guardarObj.on("value", (registros) => {
-//     document.getElementById("tabla").innerHTML += "";
-//     registros.forEach((registro1) => {
-//       let registroData = registro1.val();
-//       console.log(registroData);
-//       document.getElementById("tabla").innerHTML += `
-//      <tr>
-//        <td>${registroData.nombre}</td>
-//        <td>${registroData.apellido}</td>
-//        <td>${registroData.correo}</td>
-//        <td>${registroData.empresa}</td>
-//        <td>${registroData.motivo}</td>
-//        <td>${registroData.cita}</td>
-//        <td>${registroData.encargado}</td>
-//      </tr>`;
-//     });
-//   });
-// })
-// 
-
-// const prueba = { ciela: "vania" };
-
-// db.collection("visitantes")
-//   .doc()
-//   .set(prueba)
-//   .then(() => {
-//     console.log("prueba");
-//   });
 
 const registroVisitantes = document.getElementById("enviar");
 registroVisitantes.addEventListener("click", async (e) => {
@@ -117,34 +64,4 @@ const guardarObj = (formulario) => {
 };
 
 //firebase.firestore();
-console.log(db);
 
-/*const save = () => {
-    let buttonKeep = document.getElementById("enviar");
-    buttonKeep.addEventListener("click", async (e) => {
-      e.preventDefault();
-      await entrada(formulario);
-      console.log("clickenform");
-    });
-    
-    //firebase keys
-    
-    // window.location.href = "./index.html";
-    // Your web app's Firebase configuration
-  
-    // Initialize Firebase
-  
-    /* const db = firebase.firestore();
-    const entrada = (objeto) => {
-      db.collection("perrito").doc(objeto).set();
-    };
-  
-  };
-  save();
-  */
-
-// guardar datos de  form en un objeto
-
-//
-
-// console.log(formulario);
