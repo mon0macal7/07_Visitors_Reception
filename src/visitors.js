@@ -41,44 +41,28 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
 // // Se enciende la conexión con firestore
  const db = firebase.firestore();
 // // Aqui empieza la tabla
+const table = document.getElementById("tabla");
+window.addEventListener('DOMContentLoaded', async (e) => {
 
-
-db.collection("Inventario").onSnapshot((formulario) => {
-  
-    formulario.forEach((doc) => {
-      console.log(doc);
-      console.log(`${doc}`);
-      document.getElementById('tablak').innerHTML += `
-    <tr>
-    <td>....</td>
-      <td>${reistroData.nombre}</td>
-      <td>${reistroData.apellido}</td>
-      <td>${reistroData.correo}</td>
-      <td>${reistroData.empresa}</td>
-      <td>${reistroData.motivo}</td>
-      <td>${reistroData.cita}</td>
-      <td>${reistroData.encargado}</td>
-    </tr>`
-    })
-  })
-// const table = document.getElementById('tabla')
-
-// window.addEventListener('DOMContentLoaded', async (e) =>{
-//   await guardarObj.on('value', (registros) => {
-//   document.getElementById('tabla').innerHTML += ''
-//   registros.forEach((registro1) => {
-//     let reistroData = registro1.val()
-//     document.getElementById('tabla').innerHTML += `
-//     <tr>
-//       <td>${reistroData.nombre}</td>
-//       <td>${reistroData.apellido}</td>
-//       <td>${reistroData.correo}</td>
-//       <td>${reistroData.empresa}</td>
-//       <td>${reistroData.motivo}</td>
-//       <td>${reistroData.cita}</td>
-//       <td>${reistroData.encargado}</td>
-//     </tr>`
-//   })
+  await guardarObj.on("value", (registros) => {
+    document.getElementById("tabla").innerHTML += "";
+    registros.forEach((registro1) => {
+      let registroData = registro1.val();
+      console.log(registroData);
+      document.getElementById("tabla").innerHTML += `
+     <tr>
+       <td>${registroData.nombre}</td>
+       <td>${registroData.apellido}</td>
+       <td>${registroData.correo}</td>
+       <td>${registroData.empresa}</td>
+       <td>${registroData.motivo}</td>
+       <td>${registroData.cita}</td>
+       <td>${registroData.encargado}</td>
+     </tr>`;
+    });
+  });
+}
+// 
 
 // const prueba = { ciela: "vania" };
 
@@ -109,35 +93,34 @@ registroVisitantes.addEventListener("click", async (e) => {
 const guardarObj = (formulario) => {
   console.log(formulario);
   db.collection("registro").doc().set(formulario);
-
-  // window.location.href = "./index.html";
 };
 
 //firebase.firestore();
 console.log(db);
 
 /*const save = () => {
-  let buttonKeep = document.getElementById("enviar");
-  buttonKeep.addEventListener("click", async (e) => {
-    e.preventDefault();
-    await entrada(formulario);
-    console.log("clickenform");
-  });
-
-  //firebase keys
-
-  // Your web app's Firebase configuration
-
-  // Initialize Firebase
-
-  /* const db = firebase.firestore();
-  const entrada = (objeto) => {
-    db.collection("perrito").doc(objeto).set();
+    let buttonKeep = document.getElementById("enviar");
+    buttonKeep.addEventListener("click", async (e) => {
+      e.preventDefault();
+      await entrada(formulario);
+      console.log("clickenform");
+    });
+    
+    //firebase keys
+    
+    // window.location.href = "./index.html";
+    // Your web app's Firebase configuration
+  
+    // Initialize Firebase
+  
+    /* const db = firebase.firestore();
+    const entrada = (objeto) => {
+      db.collection("perrito").doc(objeto).set();
+    };
+  
   };
-
-};
-save();
-*/
+  save();
+  */
 
 // guardar datos de  form en un objeto
 
