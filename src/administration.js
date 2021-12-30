@@ -1,5 +1,5 @@
 // Se enciende la conexión con firestore
-
+const db = firebase.firestore();
 console.log(db);
 //Listar datos
 db.collection("registro").onSnapshot((querySnapshot) => {
