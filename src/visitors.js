@@ -39,6 +39,7 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
   }
   keepImg = getBase64Img(document.getElementById("video"));
   console.log(keepImg);
+  ctx.drawImage(video, 0, 0, 300, 225);
 });
 
 const db = firebase.firestore();
