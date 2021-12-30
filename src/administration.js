@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+import {pintarDatos} from "./visitors.js"
+pintarDatos();
+=======
 /*const onGetData = (callback) =>
   db.collection("regVisitantes").onSnapshot(callback);
 
@@ -48,3 +52,4 @@ let pintarRegistro = () => {
 //   .then(() => {
 //     console.log("prueba");
 //   });
+>>>>>>> a7c521dcf1a0de74dee400f57bbc108782401514
