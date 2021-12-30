@@ -1,3 +1,6 @@
+//import {pintarDatos} from "./visitors.js"
+//pintarDatos();
+
 //-------------------Se atraen las pantallas---------------------------------------//
 document.getElementById("pantalla1-login").hidden = false;
 document.getElementById("pantalla2-visitantes").hidden = true;
