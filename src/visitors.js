@@ -1,3 +1,5 @@
+let keepImg = "";
+
 const registro = document.getElementById("btn-siguiente"); // Implementando screen cámara
 registro.addEventListener("click", () => {
   document.getElementById("pantalla1-registro").hidden = true;
@@ -35,7 +37,7 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
     let dataURL = canvas.toDataURL();
     return dataURL;
   }
-  let keepImg = getBase64Img(document.getElementById("video"));
+  keepImg = getBase64Img(document.getElementById("video"));
   console.log(keepImg);
 });
 
@@ -53,9 +55,14 @@ registroVisitantes.addEventListener("click", async (e) => {
     motivo: document.getElementById("dropdown1").value,
     cita: document.getElementById("cita").value,
     encargado: document.getElementById("dropdown2").value,
+    foto:  keepImg
   };
   console.log(formulario);
   await guardarObj(formulario); //este await no funciona
+  setTimeout (()=>{
+    alert('Tu registro fue exitoso!')
+    window.location.href = "./index.html"
+  }, 1000) 
 });
 
 const guardarObj = (formulario) => {
