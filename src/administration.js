@@ -15,6 +15,7 @@ db.collection("registro").onSnapshot((querySnapshot) => {
       <td>${doc.data().motivo}</td>
       <td>${doc.data().cita}</td>
       <td>${doc.data().encargado}</td>
+      <td>${doc.data().date.toDate().toLocaleTimeString().toDateString()}</td>
      <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
  <i class="bi bi-image-fill"></i>
 </button></td>
@@ -36,6 +37,8 @@ db.collection("registro").onSnapshot((querySnapshot) => {
     </div>
   </div>
 </div>`
+      
+    
   });
 });
-      // <td>${doc.data().fecha.toDate()}</td>
+
