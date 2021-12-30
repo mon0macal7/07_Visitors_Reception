@@ -41,28 +41,48 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
 
 // Se enciende la conexión con firestore
 const db = firebase.firestore();
-// // Aqui empieza la tabla
-const table = document.getElementById("tabla");
-window.addEventListener('DOMContentLoaded', async (e) => {
 
-  await guardarObj.on("value", (registros) => {
-    document.getElementById("tabla").innerHTML += "";
-    registros.forEach((registro1) => {
-      let registroData = registro1.val();
-      console.log(registroData);
-      document.getElementById("tabla").innerHTML += `
-     <tr>
-       <td>${registroData.nombre}</td>
-       <td>${registroData.apellido}</td>
-       <td>${registroData.correo}</td>
-       <td>${registroData.empresa}</td>
-       <td>${registroData.motivo}</td>
-       <td>${registroData.cita}</td>
-       <td>${registroData.encargado}</td>
-     </tr>`;
-    });
-  });
-}
+//Listar datos
+// db.collection("registro").onSnapshot((querySnapshot) => {
+//   tabla.innerHTML = '';
+//   querySnapshot.forEach((doc) => {
+//       console.log(`${doc.id} => ${doc.data().descripcion}`);
+//       tabla.innerHTML += `
+//       <tr>
+//       <td>${doc.data().nombre}</td>
+//       <td>${doc.data().apellido}</td>
+//       <td>${doc.data().correo}</td>
+//       <td>${doc.data().empresa}</td>
+//       <td>${doc.data().motivo}</td>
+//       <td>${doc.data().cita}</td>
+//       <td>${doc.data().encargado}</td>
+//     </tr>`
+//   });
+// });
+
+
+// // // Aqui empieza la tabla
+// const table = document.getElementById("tabla");
+// window.addEventListener('DOMContentLoaded', async (e) => {
+
+//   await guardarObj.on("value", (registros) => {
+//     document.getElementById("tabla").innerHTML += "";
+//     registros.forEach((registro1) => {
+//       let registroData = registro1.val();
+//       console.log(registroData);
+//       document.getElementById("tabla").innerHTML += `
+//      <tr>
+//        <td>${registroData.nombre}</td>
+//        <td>${registroData.apellido}</td>
+//        <td>${registroData.correo}</td>
+//        <td>${registroData.empresa}</td>
+//        <td>${registroData.motivo}</td>
+//        <td>${registroData.cita}</td>
+//        <td>${registroData.encargado}</td>
+//      </tr>`;
+//     });
+//   });
+// })
 // 
 
 // const prueba = { ciela: "vania" };
