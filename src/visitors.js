@@ -36,12 +36,31 @@ document.getElementById("tomarFoto").addEventListener("click", () => {
     return dataURL;
   }
   let keepImg = getBase64Img(document.getElementById("video"));
-  console.log(keepImg);
-});
+  console.log(keepImg); });
 
-// Se enciende la conexión con firestore
-const db = firebase.firestore();
+// // Se enciende la conexión con firestore
+ const db = firebase.firestore();
 // // Aqui empieza la tabla
+
+
+db.collection("Inventario").onSnapshot((formulario) => {
+  
+    formulario.forEach((doc) => {
+      console.log(doc);
+      console.log(`${doc}`);
+      document.getElementById('tablak').innerHTML += `
+    <tr>
+    <td>....</td>
+      <td>${reistroData.nombre}</td>
+      <td>${reistroData.apellido}</td>
+      <td>${reistroData.correo}</td>
+      <td>${reistroData.empresa}</td>
+      <td>${reistroData.motivo}</td>
+      <td>${reistroData.cita}</td>
+      <td>${reistroData.encargado}</td>
+    </tr>`
+    })
+  })
 // const table = document.getElementById('tabla')
 
 // window.addEventListener('DOMContentLoaded', async (e) =>{

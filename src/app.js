@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-
-
-=======
 //import {pintarDatos} from "./visitors.js"
 //pintarDatos();
->>>>>>> a7c521dcf1a0de74dee400f57bbc108782401514
 
 //-------------------Se atraen las pantallas---------------------------------------//
 document.getElementById("pantalla1-login").hidden = false;
